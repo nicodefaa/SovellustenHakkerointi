@@ -10,3 +10,5 @@ Compile gcc komennolla jonka jälkeen ilmestyy suoritettava hello -tiedosto:
 
 <img width="922" height="223" alt="kuva" src="https://github.com/user-attachments/assets/360041b6-9b37-496c-8a48-41a1b3fa65c2" />
 
+hello -tiedoston sisältö:
+<img width="1270" height="503" alt="kuva" src="https://github.com/user-attachments/assets/854994dc-f5ee-47da-b834-6d314899dbbd" />
