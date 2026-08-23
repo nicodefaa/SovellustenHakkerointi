@@ -25,7 +25,8 @@
 
 ### a2) What is excluded from the scope and why:
 
-> **Exclusions:**
+**Exclusions:**
 > - Devices belonging to other family members because they are not owned or managed by me.
 > - SmartTV because it is not relevant to the course exercises and not a part of the study environment.
-> - ISP's network and infrastructure because 
+> - ISP's side of network and infrastructure because it is outside of my control and management.
+> - The infrastructure of cloud service providers (GitHub, OneDrive, course homepage) because they are managed by their respective service providers and not me.
