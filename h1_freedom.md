@@ -40,4 +40,16 @@
 - The ISP provides the internet connection service and is outside the scope.
 
 **Cloud services:**
-- 
+- GitHub, OneDrive and the course homepage are external services used to store and access course-related information.
+- The services themselves are outside the scope, but my personal accounts and data stored on them are relevant to it.
+
+**Remote connections:**
+- SSH may be used to connect to/from virtual machines.
+- VPN may be used to connect to external networks or services.
+
+**Suppliers and service providers:**
+- The main external service providers are my ISP, cloud service providers, and device manufacturers/vendors.
+- Their infrastructure and services are outside my direct control, forming an external boundary to my environment.
+
+<br>
+
