@@ -2,6 +2,8 @@
 
 ## a) Definition of ISMS (Information Security Management System) for home network
 
+<br>
+
 ### a1) What is included in the scope:
 
 **Basic network infrastructure:**
