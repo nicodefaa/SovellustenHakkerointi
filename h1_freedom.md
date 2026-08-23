@@ -59,4 +59,21 @@
 
 <img width="831" height="710" alt="ISMS Scope Diagram" src="https://github.com/user-attachments/assets/e71812b2-5bce-44de-b6a2-f52690f4fb45" />
 
-### What evidence could I provide?
+**What evidence could I provide?**
+
+Home router:
+- Screenshot of the router's configuration page showing Wi-Fi and firewall settings.
+
+Physical devices and virtual machines:
+- A device inventory
+- Screenshots of devices connected to the same network
+
+Course materials and notes:
+- Screenshots of the relevant OneDrive folders and GitHub repositories (including contents).
+
+MFA:
+- Screenshots of the relevant accounts' security settings showing that MFA is enabled.
+- Screenshot of the MFA app from the phone (with sensitive information hidden).
+
+Network boundaries:
+- Screenshot of router's configuration showing the connection between home network and ISP/internet.
