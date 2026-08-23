@@ -17,4 +17,9 @@
 - Online course materials
 - Personal study notes stored locally, in GitHub repositories and on OneDrive
 - Course-related source code and other exercise files
-- Credentials and authentication information used for course-related platforms (GitHub login, course homepage login, MFA, possible SSH/API keys)
+- Credentials and authentication information used for course-related platforms (logins, MFA, possible SSH/API keys)
+
+<br>
+
+### a2) What is excluded from the scope and why:
+
