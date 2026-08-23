@@ -65,8 +65,8 @@ Home router:
 - Screenshot of the router's configuration page showing Wi-Fi and firewall settings.
 
 Physical devices and virtual machines:
-- A device inventory
-- Screenshots of devices connected to the same network
+- A device inventory.
+- Screenshots of devices connected to the same network.
 
 Course materials and notes:
 - Screenshots of the relevant OneDrive folders and GitHub repositories (including contents).
