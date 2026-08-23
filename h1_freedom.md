@@ -57,4 +57,6 @@
 
 **Diagram of the network and interface:**
 
-<img width="831" height="710" alt="ISMS Scope Diagram drawio" src="https://github.com/user-attachments/assets/f399a005-7d37-47d0-9da9-980aafeab7e9" />
+<img width="831" height="710" alt="ISMS Scope Diagram" src="https://github.com/user-attachments/assets/e71812b2-5bce-44de-b6a2-f52690f4fb45" />
+
+### What evidence could I provide?
