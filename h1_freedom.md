@@ -53,3 +53,8 @@
 
 <br>
 
+### Deliverables:
+
+**Diagram of the network and interface:**
+
+<img width="831" height="710" alt="ISMS Scope Diagram drawio" src="https://github.com/user-attachments/assets/f399a005-7d37-47d0-9da9-980aafeab7e9" />
