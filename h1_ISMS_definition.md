@@ -96,4 +96,7 @@ Network boundaries:
 <br>
 
 Sources:
-Advisera. Clause-by-clause explanation of ISO 27001. Readable: [https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf](https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf). Read: 24.8.2026.
+
+Advisera. Clause-by-clause explanation of ISO 27001. Readable: [https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf]. Read: 24.8.2026.
+
+Karvinen, T. Sovellusten hakkerointi. Application hacking and vulnerabilities. Readable: [https://terokarvinen.com/application-hacking/]. Read: 24.8.2026.
