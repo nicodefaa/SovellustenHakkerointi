@@ -59,6 +59,8 @@
 
 <img width="831" height="710" alt="ISMS Scope Diagram" src="https://github.com/user-attachments/assets/e71812b2-5bce-44de-b6a2-f52690f4fb45" />
 
+<br>
+
 **What evidence could I provide?**
 
 Home router:
@@ -77,3 +79,13 @@ MFA:
 
 Network boundaries:
 - Screenshot of router's configuration showing the connection between home network and ISP/internet.
+
+<br>
+
+## b) Linking the Assignment to the Standard
+
+### Identifying interested parties in the context of my home network. 
+
+
+Sources:
+[https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf](https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf)
