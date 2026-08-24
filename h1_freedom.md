@@ -86,6 +86,12 @@ Network boundaries:
 
 ### Identifying interested parties in the context of my home network. 
 
+<img width="937" height="488" alt="ISO27001references" src="https://github.com/user-attachments/assets/2d5dae28-a153-436b-bc3d-2aeaea012d0b" />
+
+Source 
+
+
+
 
 Sources:
-[https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf](https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf)
+Advisera. Clause-by-clause explanation of ISO 27001. Readable: [https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf](https://info.advisera.com/free-downloads/ISO_27001/Clause_by_clause_explanation_of_ISO_27001_EN.pdf). Read: 24.8.2026.
