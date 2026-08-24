@@ -86,9 +86,9 @@ Network boundaries:
 
 ### Identifying interested parties in the context of my home network. 
 
-<img width="937" height="488" alt="ISO27001references" src="https://github.com/user-attachments/assets/2d5dae28-a153-436b-bc3d-2aeaea012d0b" />
+<img width="937" height="488" alt="ISO27001references" src="https://github.com/user-attachments/assets/a7fcec47-d979-468a-9032-cef3f7af467e" />
 
-Source 
+Source used for ISO 27001 -related information: Advisera.
 
 
 
