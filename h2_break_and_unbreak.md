@@ -14,9 +14,13 @@ Source: OWASP 2025.
 
 ### Find Hidden Web Directories - Fuzz URLs with ffuf
 
-
+- Web servers often have directories that are not linked anywhere. They seem hidden, but they can be still accessed if directly found.
+- Fuff is a web fuzzing tool designed to search for these "hidden" directories by automatically trying large amounts of possible URLs.
+- Many false positives are possible when fuzzing, which can be filtered out for example by size, words or lines.
 
 Source: Karvinen.
+
+<br>
 
 ### 
 
