@@ -18,7 +18,7 @@ Source: OWASP 2025.
 - Fuff is a web fuzzing tool designed to search for these "hidden" directories by automatically trying large amounts of possible URLs.
 - Many false positives are possible when fuzzing, which can be filtered out for example by size, words or lines.
 
-Source: Karvinen.
+Source: Karvinen 2023.
 
 <br>
 
@@ -29,6 +29,17 @@ Source: Karvinen.
 
 - Vertical privilege escalation means when a user gains access to functionalities that they should not have access to.
 - Horizontal privilege escalation means when a user is able to gain access to resources belonging to another user.
+
+Source: Portswigger 2026.
+
+<br>
+
+### Report Writing
+
+- 
+
+Source: Karvinen 2006.
+
 
 xx a)
 
@@ -47,6 +58,8 @@ xx g)
 
 
 Sources:
+
+Karvinen, T. 2006. Raportin kirjoittaminen. Readable: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/. Read: 30.8.2026.
 
 Karvinen, T. 2023. Find Hidden Web Directories - Fuzz URLs with ffuf. Readable: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/. Read: 30.8.2026.
 
