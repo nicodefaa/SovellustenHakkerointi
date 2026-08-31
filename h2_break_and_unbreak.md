@@ -81,13 +81,20 @@ I used the inspector to edit the text, changing the type into "text", and value 
 
 <img width="875" height="161" alt="kuva" src="https://github.com/user-attachments/assets/3b0bd294-ef8a-42b1-bba8-ec433900d031" />
 
+Finishing the exercise, I disconnected from the app and re-connected my VM back to the internet.
+
 <br>
 
 Source: Karvinen 2024.
 
 <br>
 
-xx b)
+xx b) Fixing 010-staff-only vulnerability
+
+<img width="420" height="168" alt="kuva" src="https://github.com/user-attachments/assets/0bde5379-496b-4cb7-8316-b5b19018eac5" />
+
+Source: Karvinen 2024.
+
 
 xx c)
 
@@ -97,7 +104,6 @@ xx e)
 
 xx f)
 
-xx g)
 
 
 
