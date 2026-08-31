@@ -101,20 +101,24 @@ I opened the staff-only.py file in text editor *micro staff-only.py*:
 In the file, I changed two lines:
 
 *sql = "SELECT password FROM pins WHERE pin='"+pin+"';"* into: *sql = "SELECT password FROM pins WHERE pin=:pin;"*
+
 and
+
 *res=db.session.execute(text(sql))* into: *res = db.session.execute(text(sql), {"pin": pin})*
 
 Now, when I tried to do the same trick as before:
 
 <img width="454" height="763" alt="kuva" src="https://github.com/user-attachments/assets/57a3f0b4-425a-497d-950d-a72a41a9f95a" />
 
-Pressing the Reveal my password -button returned *(not found)*, and the *input type* on the inspector returned back to *number*.
+Pressing the Reveal my password -button returned *(not found)*, and the *input type* on the inspector corrected itself back to *number*.
 
 <img width="517" height="775" alt="kuva" src="https://github.com/user-attachments/assets/2ebef690-7725-4afc-9378-8dc52dad7d11" />
 
 I could not figure out the solution on my own even with the assistance of the course material, so I asked ChatGPT to help me with this. The above changes in the code were suggested by ChatGPT.
 
-Source: Karvinen 2024.
+I also asked an explanation of the fix from ChatGPT, which I understood as: *:pin* is a placeholder variable that gets inserted as the value of the PIN, so if a user inserts *' OR TRUE LIMIT 2,1; --*, the database treats the entire thing as a PIN value rather than SQL commands. So since there is no pin with the value of *' OR TRUE LIMIT 2,1; --*, it returns *(not found)*.
+
+Sources: Karvinen 2024.
 
 
 xx c) 
