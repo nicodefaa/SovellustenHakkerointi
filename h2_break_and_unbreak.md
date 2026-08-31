@@ -98,11 +98,16 @@ I opened the staff-only.py file in text editor *micro staff-only.py*.
 
 <img width="516" height="36" alt="kuva" src="https://github.com/user-attachments/assets/b49998e9-cb94-4470-9d97-4d365fe8bf24" />
 
+<img width="454" height="763" alt="kuva" src="https://github.com/user-attachments/assets/57a3f0b4-425a-497d-950d-a72a41a9f95a" />
+
+<img width="517" height="775" alt="kuva" src="https://github.com/user-attachments/assets/2ebef690-7725-4afc-9378-8dc52dad7d11" />
+
+
 
 Source: Karvinen 2024.
 
 
-xx c)
+xx c) 
 
 xx d)
 
