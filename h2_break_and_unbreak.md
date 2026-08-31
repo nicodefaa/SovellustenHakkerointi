@@ -121,7 +121,43 @@ I also asked an explanation of the fix from ChatGPT, which I understood as: *:pi
 Sources: Karvinen 2024.
 
 
-xx c) 
+xx c) Fuzz URLs with ffuf
+
+As instructed, I downloaded the dirfuzt-0 file with wget, added execution permission for it, and then ran it:
+
+<img width="276" height="207" alt="kuva" src="https://github.com/user-attachments/assets/3994506e-1d6a-46b7-87d6-2af3c828edcb" />
+
+It showed me the URL which I input into a web browser. The starting point:
+
+<img width="477" height="147" alt="kuva" src="https://github.com/user-attachments/assets/482596af-e36d-4c0f-ac70-8c14ecc1c545" />
+
+While it was running, I opened another terminal to first install ffuf with *sudo apt-get install ffuf* and downloaded a wordlist *common.txt* that was linked in the course material.
+
+*/bin/ffuf | less* showed a list of all the parameters usable with Ffuf.
+
+I used the command */bin/ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ* to run Ffuf with the wordlist common.txt and targeting the given address. FUZZ is replaced by the word in the list in each scan.
+
+<img width="484" height="27" alt="kuva" src="https://github.com/user-attachments/assets/df8d60a9-0655-4e80-bd0b-14009afb16ee" />
+
+It ran the tests extremely fast, not even taking a full second:
+
+<img width="746" height="30" alt="kuva" src="https://github.com/user-attachments/assets/c9e23d6b-88ce-4a52-8715-6cf4672642d8" />
+
+Now it was time to start filtering the results. Adding a *-fs 132* to filter by size returned ust one (clear) result:
+
+<img width="743" height="448" alt="kuva" src="https://github.com/user-attachments/assets/0dafcaa6-c041-498e-9a7d-f756eba4fff6" />
+
+Now that I knew admin was the answer, I just input it into the address bar of the site:
+
+<img width="513" height="207" alt="kuva" src="https://github.com/user-attachments/assets/0c2a13ff-f25d-4f12-a459-05403549f3ce" />
+
+A small note: The answer *admin* was already in the results on the first scan (with the 4751 others), but it would've been extremely hard to notice without using filters:
+
+<img width="712" height="85" alt="kuva" src="https://github.com/user-attachments/assets/8e5e1e05-b776-452b-8384-b67cc78348b2" />
+
+Source: Karvinen 2023.
+
+<br>
 
 xx d)
 
