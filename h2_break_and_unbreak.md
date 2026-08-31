@@ -1,4 +1,4 @@
-# h2 Break and Unbreak
+`# h2 Break and Unbreak
 
 ## x) Summaries
 
@@ -93,6 +93,11 @@ xx b) Fixing 010-staff-only vulnerability
 
 <img width="420" height="168" alt="kuva" src="https://github.com/user-attachments/assets/0bde5379-496b-4cb7-8316-b5b19018eac5" />
 
+I opened the staff-only.py file in text editor *micro staff-only.py*.
+
+<img width="516" height="36" alt="kuva" src="https://github.com/user-attachments/assets/b49998e9-cb94-4470-9d97-4d365fe8bf24" />
+
+
 Source: Karvinen 2024.
 
 
@@ -117,4 +122,4 @@ Karvinen, T. 2024. Hack'n Fix. Readable: https://terokarvinen.com/hack-n-fix/. R
 
 OWASP 2025. A01:2021 - Broken Access Control. Readable: https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/index.html. Read: 30.8.2026.
 
-Portswigger 2026. Access control vulnerabilities and privilege escalation. Readable: https://portswigger.net/web-security/access-control. Read: 30.8.2026.
+Portswigger 2026. Access control vulnerabilities and privilege escalation. Readable: https://portswigger.net/web-security/access-control. Read: 30.8.2026.`
