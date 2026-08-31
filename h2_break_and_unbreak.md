@@ -73,10 +73,15 @@ Pressing F12 I opened the browser devtools and with the element picker, picked t
 
 <img width="432" height="27" alt="kuva" src="https://github.com/user-attachments/assets/4248bd67-f0aa-439d-bd2e-7995a8cf459d" />
 
-I used the inspector to edit the text, changing the type into "text", and value to "' OR TRUE LIMIT 2,1; --", after which pressing the Reveal my password -button gave me the admin password.
+I used the inspector to edit the text, changing the type into "text", and value to "' OR TRUE LIMIT 2,1; --":
+
+<img width="379" height="40" alt="kuva" src="https://github.com/user-attachments/assets/8c6c5ae5-f76f-483e-bd42-de0ebee6c559" />
+
+...after which pressing the Reveal my password -button gave me the admin password:
 
 <img width="875" height="161" alt="kuva" src="https://github.com/user-attachments/assets/3b0bd294-ef8a-42b1-bba8-ec433900d031" />
 
+<br>
 
 Source: Karvinen 2024.
 
