@@ -203,10 +203,17 @@ Having previously fuzzed the *admin-console*, I manually typed that into the add
 
 <img width="515" height="380" alt="kuva" src="https://github.com/user-attachments/assets/d0b50778-af2a-4303-a12d-fa1180e021e5" />
 
+When accessing the Admin console, the site seemed to only check that the user was logged in, but did not care which rights the user had, whether it was a normal user or an actual admin.
 
 Source: Karvinen 2024.
 
-xx e)
+<br>
+
+xx e) Fixing the 020-your-eyes-only vulnerability
+
+
+
+Source: Karvinen 2024.
 
 xx f)
 
