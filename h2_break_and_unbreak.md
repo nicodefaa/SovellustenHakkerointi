@@ -69,10 +69,6 @@ After connecting to the app, I navigated to the address 127.0.0.1:5000 using the
 
 I right clicked the site and selected *Save Page As*, after which I got a local copy of the website.
 
-When using the local copy (.html file) to access the site, pressing the Reveal my password -button directed me into the following site:
-
-
-
 
 
 Source: Karvinen 2024.
