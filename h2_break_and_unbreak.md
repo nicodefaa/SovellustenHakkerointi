@@ -36,12 +36,15 @@ Source: Portswigger 2026.
 
 ### Report Writing
 
-- 
+- Reports should explain precisely what you did, where, and what happened, to the point of the task being repeatable by someone else.
+- Sources used should be listed and referred to, otherwise it's plagiarism.
+- Honesty is important. Saying you did something without actually doing it is seen as cheating.
 
 Source: Karvinen 2006.
 
+<br>
 
-xx a)
+xx a) Breaking into 010-staff-only
 
 xx b)
 
@@ -59,10 +62,10 @@ xx g)
 
 Sources:
 
-Karvinen, T. 2006. Raportin kirjoittaminen. Readable: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/. Read: 30.8.2026.
+Karvinen, T. 2006. Raportin kirjoittaminen. Readable: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/. Read: 31.8.2026.
 
 Karvinen, T. 2023. Find Hidden Web Directories - Fuzz URLs with ffuf. Readable: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/. Read: 30.8.2026.
 
-OWASP. 2025. A01:2021 - Broken Access Control. Readable: https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/index.html. Read: 30.8.2026.
+OWASP 2025. A01:2021 - Broken Access Control. Readable: https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/index.html. Read: 30.8.2026.
 
-Portswigger. 2026. Access control vulnerabilities and privilege escalation. Readable: https://portswigger.net/web-security/access-control. Read: 30.8.2026.
+Portswigger 2026. Access control vulnerabilities and privilege escalation. Readable: https://portswigger.net/web-security/access-control. Read: 30.8.2026.
