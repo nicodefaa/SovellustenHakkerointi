@@ -67,8 +67,18 @@ After connecting to the app, I navigated to the address 127.0.0.1:5000 using the
 
 <img width="824" height="365" alt="kuva" src="https://github.com/user-attachments/assets/0141d659-00b7-4940-ac37-97e5ef472174" />
 
-I right clicked the site and selected *Save Page As*, after which I got a local copy of the website.
+The input field was set to accept numbers only, so adding a SQL injection to it wasn't directly possible (yet).
 
+Pressing F12 I opened the browser devtools and with the element picker, picked the input field, which showed me the line where the code for it was.
+
+<img width="422" height="44" alt="kuva" src="https://github.com/user-attachments/assets/20d2e651-af31-481a-a5d9-4e300c2c44b3" />
+
+I changed the 
+
+
+
+
+<img width="875" height="161" alt="kuva" src="https://github.com/user-attachments/assets/3b0bd294-ef8a-42b1-bba8-ec433900d031" />
 
 
 Source: Karvinen 2024.
