@@ -94,15 +94,25 @@ xx b) Fixing 010-staff-only vulnerability
 
 <img width="420" height="168" alt="kuva" src="https://github.com/user-attachments/assets/0bde5379-496b-4cb7-8316-b5b19018eac5" />
 
-I opened the staff-only.py file in text editor *micro staff-only.py*.
+I opened the staff-only.py file in text editor *micro staff-only.py*:
 
 <img width="516" height="36" alt="kuva" src="https://github.com/user-attachments/assets/b49998e9-cb94-4470-9d97-4d365fe8bf24" />
 
+In the file, I changed two lines:
+
+*sql = "SELECT password FROM pins WHERE pin='"+pin+"';"* into: *sql = "SELECT password FROM pins WHERE pin=:pin;"*
+and
+*res=db.session.execute(text(sql))* into: *res = db.session.execute(text(sql), {"pin": pin})*
+
+Now, when I tried to do the same trick as before:
+
 <img width="454" height="763" alt="kuva" src="https://github.com/user-attachments/assets/57a3f0b4-425a-497d-950d-a72a41a9f95a" />
+
+Pressing the Reveal my password -button returned *(not found)*, and the *input type* on the inspector returned back to *number*.
 
 <img width="517" height="775" alt="kuva" src="https://github.com/user-attachments/assets/2ebef690-7725-4afc-9378-8dc52dad7d11" />
 
-
+I could not figure out the solution on my own even with the assistance of the course material, so I asked ChatGPT to help me with this. The above changes in the code were suggested by ChatGPT.
 
 Source: Karvinen 2024.
 
