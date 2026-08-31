@@ -71,7 +71,6 @@ I right clicked the site and selected *Save Page As*, after which I got a local 
 
 When using the local copy (.html file) to access the site, pressing the Reveal my password -button directed me into the following site:
 
-<img width="922" height="753" alt="kuva" src="https://github.com/user-attachments/assets/1b346819-f949-4d93-a547-24eaf71f2ea9" />
 
 
 
