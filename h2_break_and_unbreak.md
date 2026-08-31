@@ -1,4 +1,5 @@
-`# h2 Break and Unbreak
+```
+# h2 Break and Unbreak
 
 ## x) Summaries
 
@@ -122,4 +123,5 @@ Karvinen, T. 2024. Hack'n Fix. Readable: https://terokarvinen.com/hack-n-fix/. R
 
 OWASP 2025. A01:2021 - Broken Access Control. Readable: https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/index.html. Read: 30.8.2026.
 
-Portswigger 2026. Access control vulnerabilities and privilege escalation. Readable: https://portswigger.net/web-security/access-control. Read: 30.8.2026.`
+Portswigger 2026. Access control vulnerabilities and privilege escalation. Readable: https://portswigger.net/web-security/access-control. Read: 30.8.2026.
+```
