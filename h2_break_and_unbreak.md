@@ -53,6 +53,14 @@ Next I downloaded the exercise files using wget *wget https://terokarvinen.com/h
 
 <img width="282" height="74" alt="kuva" src="https://github.com/user-attachments/assets/7cf36d53-a916-4904-9fca-37ac3d8eb569" />
 
+I then unzipped the file using unzip *unzip teros-challenges.zip*
+
+<img width="368" height="70" alt="kuva" src="https://github.com/user-attachments/assets/93c8adc6-91a6-4784-91ba-f46a2f268da2" />
+
+Navigating to directory/file *
+
+<img width="899" height="156" alt="kuva" src="https://github.com/user-attachments/assets/e9eb96c0-6f52-4a1c-bee7-a298af3893a2" />
+
 
 Source: Karvinen 2024.
 
