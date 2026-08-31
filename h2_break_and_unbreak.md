@@ -205,20 +205,36 @@ Having previously fuzzed the *admin-console*, I manually typed that into the add
 
 When accessing the Admin console, the site seemed to only check that the user was logged in, but did not care which rights the user had, whether it was a normal user or an actual admin.
 
+The site also returned an error when trying to log out, as if the logging out "site" was not coded in properly, or I did not have permission to access it:
+
+<img width="695" height="281" alt="kuva" src="https://github.com/user-attachments/assets/309d2d03-c1f0-4bc2-810b-aba62494c70d" />
+
 Source: Karvinen 2024.
 
 <br>
 
 xx e) Fixing the 020-your-eyes-only vulnerability
 
+Again with ChatGPT's help I found that the possible error could be located in */logtin/hats/view.py*, and decided to test it.
+
+When asked, ChatGPT told me this solution was directly referred to in the course page https://terokarvinen.com/hack-n-fix/, but I could not find anything about it there.
+
+<img width="725" height="405" alt="kuva" src="https://github.com/user-attachments/assets/8b192a02-0d4d-4985-8a00-86b7b649e16d" />
+
+When inspecting the code, it came pretty clear to me what the problem was, since *class AdminDashboardView* had the line *and self.request.user.is_staff* inside it but *class AdminShowAllView* did not.
+
+I copied the *and self.request.user.is_staff* line into *class AdminShowAllView* as well:
+
+<img width="728" height="399" alt="kuva" src="https://github.com/user-attachments/assets/dcd56e8c-e289-4e44-af8f-8017d4f6f9ef" />
+
+Restarting the server and trying to access admin-console again now gave the same 403 Forbidden -error as Admin dashboard:
+
+<img width="580" height="166" alt="kuva" src="https://github.com/user-attachments/assets/8ff5fbfa-2376-42af-906c-c6e938e16861" />
 
 
 Source: Karvinen 2024.
 
-xx f)
-
-
-
+<br>
 
 Sources:
 
