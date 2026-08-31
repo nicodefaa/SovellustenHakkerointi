@@ -57,9 +57,16 @@ I then unzipped the file using unzip *unzip teros-challenges.zip*
 
 <img width="368" height="70" alt="kuva" src="https://github.com/user-attachments/assets/93c8adc6-91a6-4784-91ba-f46a2f268da2" />
 
-Navigating to directory/file *
+Navigating to directory *cd challenges/010-staff-only/*, importing two required packages *sudo apt install python3-flask python3-flask-sqlalchemy*, then running the python program inside *python3 staff-only.py*:
 
 <img width="899" height="156" alt="kuva" src="https://github.com/user-attachments/assets/e9eb96c0-6f52-4a1c-bee7-a298af3893a2" />
+
+**Before continuing with the exercise, I disconnected my Kali VM from the internet as a safety precaution.**
+
+After connecting to the app, I navigated to the address 127.0.0.1:5000 using the Mozilla Firefox browser, which displayed the following test site:
+
+<img width="824" height="365" alt="kuva" src="https://github.com/user-attachments/assets/0141d659-00b7-4940-ac37-97e5ef472174" />
+
 
 
 Source: Karvinen 2024.
