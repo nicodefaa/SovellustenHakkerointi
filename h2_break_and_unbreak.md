@@ -173,7 +173,7 @@ I used the following commands to prepare the Django app:
 
 *source virtualenv/bin/activate*
 
-*django-admin --version* (version check)
+*django-admin --version* (Version check. My version was a lot newer than what the guide said, but out of curiosity I decided to try it with that.)
 
 Then navigated to the directory with *cd logtin*:
 
@@ -183,8 +183,27 @@ I updated the database with the following command:
 
 <img width="661" height="122" alt="kuva" src="https://github.com/user-attachments/assets/155151a5-2f7e-4c9a-9414-6b018884a403" />
 
+After **disconnecting from the internet**, I ran the server:
 
+<img width="463" height="226" alt="kuva" src="https://github.com/user-attachments/assets/5a58d5b9-48d5-4bc0-b4d5-dceaf63582ea" />
 
+I started by using Ffuf to scan for hidden sites, which resulted in one: *admin-console*
+
+<img width="755" height="400" alt="kuva" src="https://github.com/user-attachments/assets/8ab911d1-7b9f-4318-a0ab-ec1e1fac3620" />
+
+I created an account on the site with my chosen username and password, then logged in:
+
+<img width="932" height="753" alt="kuva" src="https://github.com/user-attachments/assets/5a2099f5-eb6e-453a-87f5-17ccbe19d0b4" />
+
+I was able to access my "personal site" with the *Show my personal data* -button, but clicking on the *Admin dashboard* -button resulted in a rejection error:
+
+<img width="597" height="145" alt="kuva" src="https://github.com/user-attachments/assets/6fa666ff-a7e7-4427-87e2-a21eb485a7ba" />
+
+Having previously fuzzed the *admin-console*, I manually typed that into the address bar, granting me access to the *Admin secret page*.
+
+<img width="515" height="380" alt="kuva" src="https://github.com/user-attachments/assets/d0b50778-af2a-4303-a12d-fa1180e021e5" />
+
+When accessing the Admin console, the site seemed to only check that the user was logged in, but did not care which rights the user had, whether it was a normal user or an actual admin.
 
 
 Source: Karvinen 2024.
