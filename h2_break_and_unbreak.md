@@ -114,7 +114,7 @@ Pressing the Reveal my password -button returned *(not found)*, and the *input t
 
 <img width="517" height="775" alt="kuva" src="https://github.com/user-attachments/assets/2ebef690-7725-4afc-9378-8dc52dad7d11" />
 
-I could not figure out the solution on my own even with the assistance of the course material, so I asked ChatGPT to help me with this. The above changes in the code were suggested by ChatGPT.
+Because I had never done any coding involving SQL, I could not figure out the solution on my own even with the assistance of the course material, so I asked ChatGPT to help me with this. The above changes in the code were suggested by ChatGPT.
 
 I also asked an explanation of the fix from ChatGPT, which I understood as: *:pin* is a placeholder variable that gets inserted as the value of the PIN, so if a user inserts *' OR TRUE LIMIT 2,1; --*, the database treats the entire thing as a PIN value rather than SQL commands. So since there is no pin with the value of *' OR TRUE LIMIT 2,1; --*, it returns *(not found)*.
 
@@ -135,7 +135,7 @@ While it was running, I opened another terminal to first install ffuf with *sudo
 
 */bin/ffuf | less* showed a list of all the parameters usable with Ffuf.
 
-I used the command */bin/ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ* to run Ffuf with the wordlist common.txt and targeting the given address. FUZZ is replaced by the word in the list in each scan.
+First, I made sure that the VM was **disconnected from the internet**, after which I used the command */bin/ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ* to run Ffuf with the wordlist common.txt and targeting the given address. FUZZ is replaced by the word in the list in each scan.
 
 <img width="484" height="27" alt="kuva" src="https://github.com/user-attachments/assets/df8d60a9-0655-4e80-bd0b-14009afb16ee" />
 
@@ -151,7 +151,7 @@ Now that I knew admin was the answer, I just input it into the address bar of th
 
 <img width="513" height="207" alt="kuva" src="https://github.com/user-attachments/assets/0c2a13ff-f25d-4f12-a459-05403549f3ce" />
 
-A small note: The answer *admin* was already in the results on the first scan (with the 4751 others), but it would've been extremely hard to notice without using filters:
+A small note: The answer *admin* was already in the results on the first scan (with the 4751 others), but it would've been extremely hard to find/notice without using filters:
 
 <img width="712" height="85" alt="kuva" src="https://github.com/user-attachments/assets/8e5e1e05-b776-452b-8384-b67cc78348b2" />
 
@@ -160,6 +160,30 @@ Source: Karvinen 2023.
 <br>
 
 xx d) Breaking into 020-your-eyes-only
+
+Starting by first navigating into the 020-your-eyes-only directory:
+
+<img width="496" height="110" alt="kuva" src="https://github.com/user-attachments/assets/b77e15ab-cf96-424d-9ab1-6060b725bbec" />
+
+I used the following commands to prepare the Django app:
+
+*sudo apt-get -y install virtualenv*
+
+*virtualenv virtualenv/ -p python3 --system-site-packages*
+
+*source virtualenv/bin/activate*
+
+*django-admin --version* (version check)
+
+Then navigated to the directory with *cd logtin*:
+
+<img width="496" height="423" alt="kuva" src="https://github.com/user-attachments/assets/919b31a3-7f5a-48da-b795-fdbf13d425d6" />
+
+I updated the database with the following command:
+
+<img width="661" height="122" alt="kuva" src="https://github.com/user-attachments/assets/155151a5-2f7e-4c9a-9414-6b018884a403" />
+
+
 
 
 
