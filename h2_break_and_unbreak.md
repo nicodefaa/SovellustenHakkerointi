@@ -71,12 +71,9 @@ The input field was set to accept numbers only, so adding a SQL injection to it 
 
 Pressing F12 I opened the browser devtools and with the element picker, picked the input field, which showed me the line where the code for it was.
 
-<img width="422" height="44" alt="kuva" src="https://github.com/user-attachments/assets/20d2e651-af31-481a-a5d9-4e300c2c44b3" />
+<img width="432" height="27" alt="kuva" src="https://github.com/user-attachments/assets/4248bd67-f0aa-439d-bd2e-7995a8cf459d" />
 
-I changed the 
-
-
-
+I used the inspector to edit the text, changing the type into "text", and value to "' OR TRUE LIMIT 2,1; --", after which pressing the Reveal my password -button gave me the admin password.
 
 <img width="875" height="161" alt="kuva" src="https://github.com/user-attachments/assets/3b0bd294-ef8a-42b1-bba8-ec433900d031" />
 
