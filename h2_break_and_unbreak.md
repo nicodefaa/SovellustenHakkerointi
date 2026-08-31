@@ -67,6 +67,13 @@ After connecting to the app, I navigated to the address 127.0.0.1:5000 using the
 
 <img width="824" height="365" alt="kuva" src="https://github.com/user-attachments/assets/0141d659-00b7-4940-ac37-97e5ef472174" />
 
+I right clicked the site and selected *Save Page As*, after which I got a local copy of the website.
+
+When using the local copy (.html file) to access the site, pressing the Reveal my password -button directed me into the following site:
+
+<img width="922" height="753" alt="kuva" src="https://github.com/user-attachments/assets/1b346819-f949-4d93-a547-24eaf71f2ea9" />
+
+
 
 
 Source: Karvinen 2024.
