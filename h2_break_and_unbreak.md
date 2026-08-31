@@ -46,6 +46,12 @@ Source: Karvinen 2006.
 
 xx a) Breaking into 010-staff-only
 
+These exercises were done in Kali Linux version 2026.3 Virtual Machine. *(checked with "cat /etc/os-release")*
+
+I started by updating my system *sudo apt-get update* and installing three instructed packages *sudo apt-get -y install wget unzip micro*.
+
+<br>
+
 xx b)
 
 xx c)
