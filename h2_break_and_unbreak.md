@@ -48,7 +48,13 @@ xx a) Breaking into 010-staff-only
 
 These exercises were done in Kali Linux version 2026.3 Virtual Machine. *(checked with "cat /etc/os-release")*
 
-I started by updating my system *sudo apt-get update* and installing three instructed packages *sudo apt-get -y install wget unzip micro*.
+I started by updating my system *sudo apt-get update* and installing the three instructed packages/programs *sudo apt-get -y install wget unzip micro*.
+Next I downloaded the exercise files using wget *wget https://terokarvinen.com/hack-n-fix/teros-challenges.zip*, after which the zip file could be found in my Downloads directory.
+
+<img width="282" height="74" alt="kuva" src="https://github.com/user-attachments/assets/7cf36d53-a916-4904-9fca-37ac3d8eb569" />
+
+
+Source: Karvinen 2024.
 
 <br>
 
@@ -71,6 +77,8 @@ Sources:
 Karvinen, T. 2006. Raportin kirjoittaminen. Readable: https://terokarvinen.com/2006/raportin-kirjoittaminen-4/. Read: 31.8.2026.
 
 Karvinen, T. 2023. Find Hidden Web Directories - Fuzz URLs with ffuf. Readable: https://terokarvinen.com/2023/fuzz-urls-find-hidden-directories/. Read: 30.8.2026.
+
+Karvinen, T. 2024. Hack'n Fix. Readable: https://terokarvinen.com/hack-n-fix/. Read: 31.8.2026.
 
 OWASP 2025. A01:2021 - Broken Access Control. Readable: https://owasp.org/Top10/2021/A01_2021-Broken_Access_Control/index.html. Read: 30.8.2026.
 
