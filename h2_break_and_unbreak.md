@@ -155,6 +155,24 @@ A small note: The answer *admin* was already in the results on the first scan (w
 
 <img width="712" height="85" alt="kuva" src="https://github.com/user-attachments/assets/8e5e1e05-b776-452b-8384-b67cc78348b2" />
 
+<br>
+
+> After receiving student evaluations, I noticed I had accidentally done this exercise with the dirfuzt-0 file instead of the intended dirfuzt-1 file. Even though it seemed very similar, I decided to do and add it as well for practice.
+
+After downloading the dirfuzt-1 file, I used the same method of first giving the owner execution rights with *chmod u+x dirfuzt-1*, then ran it with *./dirfuzt-1*:
+
+<img width="268" height="87" alt="kuva" src="https://github.com/user-attachments/assets/0f190b74-c2f6-46ce-9c12-e329e53bf017" />
+
+The app ran on the same address as the previous one, and looked almost identical:
+
+<img width="652" height="143" alt="kuva" src="https://github.com/user-attachments/assets/854ef254-0d58-4956-afd2-715909a6bc77" />
+
+
+
+
+
+
+
 Source: Karvinen 2023.
 
 <br>
