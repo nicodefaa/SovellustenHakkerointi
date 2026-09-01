@@ -157,6 +157,8 @@ A small note: The answer *admin* was already in the results on the first scan (w
 
 <br>
 
+--------------------------
+
 > After receiving student evaluations, I noticed I had accidentally done this exercise with the dirfuzt-0 file instead of the intended dirfuzt-1 file. Even though it seemed very similar, I decided to do and add it as well for practice.
 
 After downloading the dirfuzt-1 file, I used the same method of first giving the owner execution rights with *chmod u+x dirfuzt-1*, then ran it with *./dirfuzt-1*:
@@ -167,11 +169,21 @@ The app ran on the same address as the previous one, and looked almost identical
 
 <img width="652" height="143" alt="kuva" src="https://github.com/user-attachments/assets/854ef254-0d58-4956-afd2-715909a6bc77" />
 
+I ran the command */bin/ffuf -w common.txt -u http://127.0.0.2:8000/FUZZ*.
 
+<img width="730" height="191" alt="kuva" src="https://github.com/user-attachments/assets/e2b31dbc-9dfc-461b-8e9d-55ec88838a83" />
 
+Most results were size 154, so I decided to filter by that for the next scan. The parameter used to filter results by size could be found from */bin/ffuf | less*, which is *fs*:
 
+<img width="736" height="551" alt="kuva" src="https://github.com/user-attachments/assets/5bd62696-34e4-4920-a251-3405fb01e58d" />
 
+One of the results, wp-admin,  seemed promising so I decided to try that:
 
+<img width="572" height="202" alt="kuva" src="https://github.com/user-attachments/assets/a62982af-575f-44d8-bb5b-14a03425f400" />
+
+Task completed!
+
+--------------------------
 
 Source: Karvinen 2023.
 
