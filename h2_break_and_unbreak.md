@@ -159,9 +159,9 @@ A small note: The answer *admin* was already in the results on the first scan (w
 
 --------------------------
 
-> After receiving student evaluations, I noticed I had accidentally done this exercise with the dirfuzt-0 file instead of the intended dirfuzt-1 file. Even though it seemed very similar, I decided to do and add it as well for practice.
+> After receiving student evaluations, I noticed I had accidentally done this exercise with the dirfuzt-0 file instead of the intended dirfuzt-1 file. Even though it seemed very similar, I decided to do it as well for practice.
 
-After downloading the dirfuzt-1 file, I used the same method of first giving the owner execution rights with *chmod u+x dirfuzt-1*, then ran it with *./dirfuzt-1*:
+After downloading the dirfuzt-1 file, as before I disconnected my VM from the internet, and then used the same method of first giving the owner execution rights with *chmod u+x dirfuzt-1*, then ran it with *./dirfuzt-1*:
 
 <img width="268" height="87" alt="kuva" src="https://github.com/user-attachments/assets/0f190b74-c2f6-46ce-9c12-e329e53bf017" />
 
