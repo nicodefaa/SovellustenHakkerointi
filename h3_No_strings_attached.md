@@ -56,7 +56,7 @@ The change I applied didn't seem to work when running the program, however:
 
 <img width="406" height="239" alt="kuva" src="https://github.com/user-attachments/assets/2492dbd6-a015-4964-abfb-95feb3d5d424" />
 
-After a moment of troubleshooting I realized/remembered that the code needs to be compiled before it becomes active. We had already done this in exercise h0, so I referred back to my [https://github.com/nicodefaa/SovellustenHakkerointi/blob/main/h0_helloworld.md](notes) on it.
+After a moment of troubleshooting I realized/remembered that the code needs to be compiled before it becomes active. We had already done this in exercise h0, so I referred back to my [notes](https://github.com/nicodefaa/SovellustenHakkerointi/blob/main/h0_helloworld.md) on it.
 
 
 
