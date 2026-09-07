@@ -30,7 +30,7 @@ At this point it seemed pretty logical to try the found string as the password. 
 
 <img width="579" height="101" alt="kuva" src="https://github.com/user-attachments/assets/5d16ef72-8f5c-4f85-bf1b-f94f8fc19805" />
 
-Exercise done. I had figured out the correct password and found the flag (highlighted in the image above).
+Exercise done. I had figured out the correct password and found the flag (shown in the image above).
 
 <br>
 
@@ -38,7 +38,22 @@ Source: Karvinen 2026.
 
 <br>
 
-## b)
+## b) Fixing the passtr.c program
+
+This assignment asked me to make a new version of the passtr.c program where the password doesn't appear directly as-is in the binary, and to demonstrate it working with a test.
+
+I opened the program's code file in micro text editor with **micro passtr.c**, and the source code looked originally like this:
+
+<img width="759" height="316" alt="kuva" src="https://github.com/user-attachments/assets/e3f9c147-a072-4e76-8b76-f3696f25f72b" />
+
+
+
+
+<br>
+
+Source: Karvinen 2026.
+
+<br>
 
 ## c)
 
