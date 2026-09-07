@@ -117,7 +117,9 @@ With this method, you could technically split the correct password into parts th
 <br>
 
 Sources: 
+
 Karvinen 2026. 
+
 W3Schools 2026.
 
 <br>
@@ -166,7 +168,9 @@ Interesting fact, even the original compressed packd-file's strings did show the
 <br>
 
 Sources:
+
 Karvinen 2026.
+
 UPX 2024.
 
 <br>
