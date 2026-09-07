@@ -72,12 +72,17 @@ I also tried to use *grep* to filter the results to make sure:
 
 <img width="397" height="181" alt="kuva" src="https://github.com/user-attachments/assets/c0f3caf9-d7ee-4b09-849c-0037fde0a416" />
 
-
-
-
+When running the program, only the password that I had set in the code worked, not the one displayed in the strings (nor the original one):
 
 <img width="401" height="289" alt="kuva" src="https://github.com/user-attachments/assets/93a626f6-2217-4e93-bb7c-190bff0dab52" />
 
+I went back to editing the code once more (**micro passtr.c**) to test what would happen if I used my variable method, but kept the original password:
+
+<img width="358" height="219" alt="kuva" src="https://github.com/user-attachments/assets/7e3d9ff2-00ee-4779-8ece-9da00707bd5b" />
+
+Compiling the code again, and testing
+
+<img width="401" height="238" alt="kuva" src="https://github.com/user-attachments/assets/ba913217-8d30-4fda-ab84-335892a2115e" />
 
 
 <br>
