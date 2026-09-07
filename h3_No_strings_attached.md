@@ -48,7 +48,7 @@ I opened the program's code file in micro text editor with **micro passtr.c**, a
 
 I'm not fluent with C specifically, but I have learned Python and Java in the past, so I could understand the basic syntax well enough. The program seemed to be a simple if-else comparison, where if the given password matches the string in the if-condition, it would print the flag, and otherwise print "Sorry, no bonus". The first idea I got was to create a variable to store the correct password, and do the comparison against the variable instead of a direct string.
 
-I made a new line that created a variable that stored the correct password in it, then compared the two variables together. I also changed the password to 123salainen for testing purposes.
+I made a new line that created a variable that stored the correct password in it, then compared the two variables together. I also changed the password to 123salainen for testing purposes. I 
 
 <img width="759" height="286" alt="kuva" src="https://github.com/user-attachments/assets/e53b9690-0f10-43b3-aee8-de66ea91289d" />
 
@@ -59,6 +59,24 @@ The change I applied didn't seem to work when running the program, however:
 After a moment of troubleshooting I realized/remembered that the code needs to be compiled before it becomes active. We had already done this in exercise h0, so I referred back to my [notes](https://github.com/nicodefaa/SovellustenHakkerointi/blob/main/h0_helloworld.md) on it.
 
 Using my previous exercise notes and the help page of gcc **gcc --help**, I used the command **gcc passtr.c -o passtr**. The **-o passtr** at the end of the command placed the output into the executable file *passtr* (which already existed, so it saved over it).
+
+Now when running the program, the old password no longer worked, but the new password I set *123salainen* did:
+
+<img width="580" height="96" alt="kuva" src="https://github.com/user-attachments/assets/ede66e63-54be-46cc-85d5-6246214408e8" />
+
+When running the strings command again, I noticed something interesting, it displayed the new password only partially:
+
+<img width="567" height="424" alt="kuva" src="https://github.com/user-attachments/assets/04f8ec8f-7840-449e-85b5-f5c27be2d62d" />
+
+I also tried to use *grep* to filter the results to make sure:
+
+<img width="397" height="181" alt="kuva" src="https://github.com/user-attachments/assets/c0f3caf9-d7ee-4b09-849c-0037fde0a416" />
+
+
+
+
+
+<img width="401" height="289" alt="kuva" src="https://github.com/user-attachments/assets/93a626f6-2217-4e93-bb7c-190bff0dab52" />
 
 
 
@@ -76,3 +94,5 @@ Source: Karvinen 2026.
 Sources:
 
 Karvinen, T. 2026. Sovellusten hakkerointi - Application hacking and vulnerabilities. Readable: https://terokarvinen.com/application-hacking/. Read: 7.9.2026.
+
+W3schools 2026. C string strcmp() function. Readable: https://www.w3schools.com/c/ref_string_strcmp.php. Read: 7.9.2026.
