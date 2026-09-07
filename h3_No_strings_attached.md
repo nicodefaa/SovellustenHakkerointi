@@ -150,11 +150,14 @@ Next, I moved onto inspecting the manual page for UPX with the command **man upx
 
 Sources:
 Karvinen 2026.
+UPX 2024.
 
 
 Sources:
 
 Karvinen, T. 2026. Sovellusten hakkerointi - Application hacking and vulnerabilities. Readable: https://terokarvinen.com/application-hacking/. Read: 7.9.2026.
+
+UPX 2024. UPX - compress or expand executable files. Readable: https://upx.github.io/. Read: 7.9.2026.
 
 W3schools 2026. C string strcat() function. Readable: https://www.w3schools.com/c/ref_string_strcat.php. Read: 7.9.2026.
 
