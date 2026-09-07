@@ -48,7 +48,7 @@ I opened the program's code file in micro text editor with **micro passtr.c**, a
 
 I'm not fluent with C specifically, but I have learned Python and Java in the past, so I could understand the basic syntax well enough. The program seemed to be a simple if-else comparison, where if the given password matches the string in the if-condition, it would print the flag, and otherwise print "Sorry, no bonus". The first idea I got was to create a variable to store the correct password, and do the comparison against the variable instead of a direct string.
 
-I created a new line 
+I made a new line that created a variable that stored the correct password in it, then compared the two variables together. I also changed the password to 123salainen for testing purposes.
 
 <img width="759" height="286" alt="kuva" src="https://github.com/user-attachments/assets/e53b9690-0f10-43b3-aee8-de66ea91289d" />
 
@@ -58,9 +58,7 @@ The change I applied didn't seem to work when running the program, however:
 
 After a moment of troubleshooting I realized/remembered that the code needs to be compiled before it becomes active. We had already done this in exercise h0, so I referred back to my [notes](https://github.com/nicodefaa/SovellustenHakkerointi/blob/main/h0_helloworld.md) on it.
 
-I used the command **gcc passtr.c -o passtr**, which gave me the following error when trying to compile:
-
-<img width="838" height="185" alt="kuva" src="https://github.com/user-attachments/assets/3f6c34ad-1cd4-44db-8c63-87038debc7dc" />
+Using my previous exercise notes and the help page of gcc **gcc --help**, I used the command **gcc passtr.c -o passtr**. The **-o passtr** at the end of the command placed the output into the executable file *passtr* (which already existed, so it saved over it).
 
 
 
