@@ -110,7 +110,7 @@ Now in the strings the password is displayed in 4 parts:
 
 <img width="302" height="146" alt="kuva" src="https://github.com/user-attachments/assets/a027fdfa-84f8-44cb-9468-436ec9c7f153" />
 
-With this method, you could technically split the correct password into parts that contain only 1 character each. Whether that would affect the performance of the program negatively, I don't know. I was happy with the result in the context of this assignment, however, so it was time to move onto the next one.
+With this method, you could technically split the correct password into parts that contain only 1 character each. Whether that would affect the performance of the program negatively, I don't know. With a non-secure password like this, it would probably still be quite easy to guess the password from this. I was happy with the result in the context of this assignment however, so it was time to move onto the next one.
 
 <br>
 
