@@ -46,6 +46,9 @@ I opened the program's code file in micro text editor with **micro passtr.c**, a
 
 <img width="759" height="316" alt="kuva" src="https://github.com/user-attachments/assets/e3f9c147-a072-4e76-8b76-f3696f25f72b" />
 
+I'm not fluent with C specifically, but I have learned Python and Java in the past, so I could understand the basic syntax well enough. The program seemed to be a simple if-else comparison, where if the given password matches the string in the if-condition, it would print the flag, and otherwise print "Sorry, no bonus". The first idea I got was to create a variable to store the correct password, and do the comparison against the variable instead of a direct string.
+
+<img width="759" height="286" alt="kuva" src="https://github.com/user-attachments/assets/e53b9690-0f10-43b3-aee8-de66ea91289d" />
 
 
 
