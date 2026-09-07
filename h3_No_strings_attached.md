@@ -109,7 +109,7 @@ Test of running the program to make sure (only) the correct password works:
 Now in the strings the password is displayed in 4 parts:
 
 <img width="302" height="146" alt="kuva" src="https://github.com/user-attachments/assets/a027fdfa-84f8-44cb-9468-436ec9c7f153" />
-
+<br>
 <img width="406" height="54" alt="kuva" src="https://github.com/user-attachments/assets/6e929cfb-d3e0-44a1-be19-0c53af89cf96" />
 
 With this method, you could technically split the correct password into parts that contain only 1 character each. Whether that would affect the performance of the program negatively, I don't know. With a non-secure password like this, it would probably still be quite easy to guess the password from this. I was happy with the result in the context of this assignment however, so it was time to move onto the next one.
@@ -122,9 +122,34 @@ W3Schools 2026.
 
 <br>
 
-## c)
+## c) Packd
 
-## d)
+The assignment simply asked to find out the password and the flag from the file/program **packd**. Same as in the exercise A, I started by navigating into the packd directory and running the **packd**-program.
+
+<img width="418" height="334" alt="kuva" src="https://github.com/user-attachments/assets/d559e9c9-c785-428c-9c1b-41552e356124" />
+
+**strings packd** did not return as easy of an answer as in the passtr task:
+
+<img width="399" height="467" alt="kuva" src="https://github.com/user-attachments/assets/732d5f80-dd36-40bc-b778-4ed53ba8bed4" />
+
+I looked at the tips on the assigment page, which hinted at the binary being packed, as well as to look at the first row of the binary, which was "wUPX!". Quick googling revealed that UPX (the Ultimate Packer of eXecutables) is a compressor tool for programs.
+
+Version check revealed that my machine already had UPX installed:
+
+<img width="537" height="238" alt="kuva" src="https://github.com/user-attachments/assets/d84c52de-1e75-4238-9504-534f225327d1" />
+
+Next, I moved onto inspecting the manual page for UPX with the command **man upx | less**. Key parts I found from the UPX manual page:
+
+<img width="378" height="46" alt="kuva" src="https://github.com/user-attachments/assets/ca3efc4d-2195-4728-b8d1-205daabfeeed" />
+<br>
+<img width="1047" height="128" alt="kuva" src="https://github.com/user-attachments/assets/80e5192f-2c14-4e3f-b9f5-df6bfabaac06" />
+<br>
+<img width="385" height="320" alt="kuva" src="https://github.com/user-attachments/assets/2573eaf2-b9a7-436c-a257-c237c422ff47" />
+
+
+
+Sources:
+Karvinen 2026.
 
 
 Sources:
