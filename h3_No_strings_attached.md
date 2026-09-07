@@ -18,6 +18,12 @@ I wanted to test what would happen if I input something, so I entered a (very no
 
 <img width="405" height="137" alt="kuva" src="https://github.com/user-attachments/assets/483ffa9e-d3da-4c13-8ed5-51dfa8b1cc93" />
 
+The tips on the assignment page said to use the 'strings' program, so I checked if it was already installed by doing a version check:
+
+<img width="652" height="175" alt="kuva" src="https://github.com/user-attachments/assets/e1db8e88-5e16-448f-8b83-c2e71f8c9865" 
+
+The results confirmed strings was already installed on my machine. Next I started inspecting the manual page by typing **man srings**.
+
 
 <br>
 
