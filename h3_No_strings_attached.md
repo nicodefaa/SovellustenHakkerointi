@@ -48,7 +48,15 @@ I opened the program's code file in micro text editor with **micro passtr.c**, a
 
 I'm not fluent with C specifically, but I have learned Python and Java in the past, so I could understand the basic syntax well enough. The program seemed to be a simple if-else comparison, where if the given password matches the string in the if-condition, it would print the flag, and otherwise print "Sorry, no bonus". The first idea I got was to create a variable to store the correct password, and do the comparison against the variable instead of a direct string.
 
+I used 
+
 <img width="759" height="286" alt="kuva" src="https://github.com/user-attachments/assets/e53b9690-0f10-43b3-aee8-de66ea91289d" />
+
+The change I applied didn't seem to work when running the program, however:
+
+<img width="406" height="239" alt="kuva" src="https://github.com/user-attachments/assets/2492dbd6-a015-4964-abfb-95feb3d5d424" />
+
+After a moment of troubleshooting I realized/remembered that the code needs to be compiled before it becomes active. We had already done this in exercise h0, so I referred back to my [https://github.com/nicodefaa/SovellustenHakkerointi/blob/main/h0_helloworld.md](notes) on it.
 
 
 
