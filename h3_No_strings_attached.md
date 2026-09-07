@@ -46,7 +46,7 @@ I opened the program's code file in micro text editor with **micro passtr.c**, a
 
 <img width="759" height="316" alt="kuva" src="https://github.com/user-attachments/assets/e3f9c147-a072-4e76-8b76-f3696f25f72b" />
 
-I'm not fluent with C specifically, but I have learned Python and Java in the past, so I could understand the basic syntax well enough. The program seemed to be a simple if-else comparison, where if the given password matches the string in the if-condition, it would print the flag, and otherwise print "Sorry, no bonus". The first idea I got was to create a variable to store the correct password, and do the comparison against the variable instead of a direct string.
+I'm not fluent with C specifically, but I have learned Python and Java in the past, so I could understand the basic syntax well enough. I also used W3Schools as an assistance for understanding the syntax. The program seemed to be a simple if-else comparison, where if the given password matches the string in the if-condition, it would print the flag, and otherwise print "Sorry, no bonus". The first idea I got was to create a variable to store the correct password, and do the comparison against the variable instead of a direct string.
 
 I made a new line that created a variable that stored the correct password in it, then compared the two variables together. I also changed the password to 123salainen for testing purposes. I 
 
@@ -80,14 +80,43 @@ I went back to editing the code once more (**micro passtr.c**) to test what woul
 
 <img width="358" height="219" alt="kuva" src="https://github.com/user-attachments/assets/7e3d9ff2-00ee-4779-8ece-9da00707bd5b" />
 
-Compiling the code again, and testing
+Compiling the code again and testing the program:
 
 <img width="401" height="238" alt="kuva" src="https://github.com/user-attachments/assets/ba913217-8d30-4fda-ab84-335892a2115e" />
 
+**strings passtr** now displayed two lines "sala-hakH" and "keri-321H":
+
+<img width="376" height="109" alt="kuva" src="https://github.com/user-attachments/assets/2a9291a5-c6e2-43a5-b56d-603915617ad6" />
+
+The password was still visible in the strings but was now split into two rows with an added H at the end of each one. The strings containing the two parts of the password were also no longer displaying directly above the "Yes, that's the password!"-line. The password was technically not displaying directly as-is in the binary, but I was not entirely sure if this was enough of a "obfuscation" the assigment was asking for, so I decided to try a bit further. 
+
+I tried to split the password into multiple variables and have the if-clause do the comparison against their combination:
+
+<img width="759" height="268" alt="kuva" src="https://github.com/user-attachments/assets/ca85b760-f985-46b9-8999-a61c6be664f3" />
+
+This syntax didn't seem to work in C however:
+
+<img width="722" height="130" alt="kuva" src="https://github.com/user-attachments/assets/c2bc402c-343f-4781-a19d-5d27407846a1" />
+
+Again, using W3Schools to assist me with syntax, I created 4 different variables with parts of the correct password, then used the *strcat* function to combine them together into the *correct* variable inside the program, then compare the input password with the correct-variable.
+
+<img width="761" height="364" alt="kuva" src="https://github.com/user-attachments/assets/ee3dfc33-24bb-4cae-b647-7f8bec9f89ae" />
+
+Test of running the program to make sure (only) the correct password works:
+
+<img width="296" height="277" alt="kuva" src="https://github.com/user-attachments/assets/12764bfb-3294-436e-9a4e-48290315ca4b" />
+
+Now in the strings the password is displayed in 4 parts:
+
+<img width="302" height="146" alt="kuva" src="https://github.com/user-attachments/assets/a027fdfa-84f8-44cb-9468-436ec9c7f153" />
+
+With this method, you could technically split the correct password into parts that contain only 1 character each. Whether that would affect the performance of the program negatively, I don't know. I was happy with the result in the context of this assignment, however, so it was time to move onto the next one.
 
 <br>
 
-Source: Karvinen 2026.
+Sources: 
+Karvinen 2026. 
+W3Schools 2026.
 
 <br>
 
@@ -100,4 +129,7 @@ Sources:
 
 Karvinen, T. 2026. Sovellusten hakkerointi - Application hacking and vulnerabilities. Readable: https://terokarvinen.com/application-hacking/. Read: 7.9.2026.
 
+W3schools 2026. C string strcat() function. Readable: https://www.w3schools.com/c/ref_string_strcat.php. Read: 7.9.2026.
+
 W3schools 2026. C string strcmp() function. Readable: https://www.w3schools.com/c/ref_string_strcmp.php. Read: 7.9.2026.
+
