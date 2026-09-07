@@ -145,13 +145,31 @@ Next, I moved onto inspecting the manual page for UPX with the command **man upx
 <img width="1047" height="128" alt="kuva" src="https://github.com/user-attachments/assets/80e5192f-2c14-4e3f-b9f5-df6bfabaac06" />
 <br>
 <img width="385" height="320" alt="kuva" src="https://github.com/user-attachments/assets/2573eaf2-b9a7-436c-a257-c237c422ff47" />
+<br>
 
+After browsing through the manual, I used the command **upx -d packd -o packd_unpacked** to decompress the file and create a new file to save the unpacked version to, keeping the original one intact, in case I need it still.
 
+<img width="643" height="305" alt="kuva" src="https://github.com/user-attachments/assets/0de90abe-3295-4617-93c8-51e5e56677bb" />
+
+Now using the **strings**-command on the unpacked file revealed a much clearer result:
+
+<img width="526" height="391" alt="kuva" src="https://github.com/user-attachments/assets/d56088c8-ea8a-4cd7-a59d-43a16ae67ff7" />
+
+Running the packd program again and using the piilos-AnAnAs password turned out to be correct and revealed the flag. I tested both with the original compressed version and the new decompressed version which both worked, suggesting that the decompressing process did not "break" anything in the program.
+
+<img width="574" height="197" alt="kuva" src="https://github.com/user-attachments/assets/925aa4e6-0bda-4c54-89fc-e5693b3a01f6" />
+
+Interesting fact, even the original compressed packd-file's strings did show the first half of the password: 
+
+<img width="210" height="74" alt="kuva" src="https://github.com/user-attachments/assets/13398e54-d80b-4791-8d76-c4fd4b86ca07" />
+
+<br>
 
 Sources:
 Karvinen 2026.
 UPX 2024.
 
+<br>
 
 Sources:
 
