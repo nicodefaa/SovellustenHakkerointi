@@ -180,7 +180,7 @@ Just as in previous exercises, there was a curious string *password1* just above
 
 <img width="264" height="67" alt="kuva" src="https://github.com/user-attachments/assets/d9d5410a-3071-44f6-bc15-268bbba788b7" />
 
-In hindsight the correct answer *password1* was also visible in the main function inside Ghinda, but I couldn't understand the syntax well enough to figure that was actually the password we were looking for.
+In hindsight the correct answer *password1* was also visible in the main function inside Ghidra, but I couldn't understand the syntax well enough to figure that was actually the password we were looking for.
 
 <img width="470" height="104" alt="kuva" src="https://github.com/user-attachments/assets/475313c1-b8ac-40fb-9a0e-0120b32ad812" />
 
