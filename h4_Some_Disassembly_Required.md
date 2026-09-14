@@ -172,11 +172,17 @@ Importing crackme01 into Ghidra and looking at the main function, I was honestly
 
 <img width="1629" height="665" alt="kuva" src="https://github.com/user-attachments/assets/56f9f23d-fddb-404f-85ce-e13244f26782" />
 
+The tutorial suggested to use strings for this one, which although we've used in previous weeks' exercises, I wouldn't have thought could work for this exercise.
+
 <img width="285" height="375" alt="kuva" src="https://github.com/user-attachments/assets/3dac4cae-f6d6-406d-8983-5784cdc02be9" />
 
+Just as in previous exercises, there was a curious string *password1* just above the yes/no outputs, which I decided to try as the answer for this one, and it worked:
 
 <img width="264" height="67" alt="kuva" src="https://github.com/user-attachments/assets/d9d5410a-3071-44f6-bc15-268bbba788b7" />
 
+In hindsight the correct answer *password1* was also visible in the main function inside Ghinda, but I couldn't understand the syntax well enough to figure that was actually the password we were looking for.
+
+<img width="470" height="104" alt="kuva" src="https://github.com/user-attachments/assets/475313c1-b8ac-40fb-9a0e-0120b32ad812" />
 
 
 <br>
