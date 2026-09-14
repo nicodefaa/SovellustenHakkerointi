@@ -14,6 +14,8 @@ Source: Hammond 2022.
 
 ## a) Installing Ghidra
 
+I used John Hammond's (Hammond 2022) YouTube video as a reference on how to install and setup ghidra.
+
 I downloaded the latest Ghidra version 12.1.3 from https://github.com/NationalSecurityAgency/ghidra/releases, as a zip file. 
 
 Next I used the unzip tool to extract the files into a new directory.
@@ -38,9 +40,46 @@ The *.lock* and *.lock~* files only appeared when Ghidra was running:
 
 Ghidra was now installed and ready.
 
+Sources:
+Hammond 2022.
+Karvinen 2026.
+
 <br>
 
-## b) 
+## b) rever-C
+
+This exercise asked to reverse engineer the packd binary to C language with Ghidra. Specific tasks given were find the main program, give variables descriptive names, explain the program's operation and solve the task from the binary, without the original source code.
+
+The task used the same zip file https://terokarvinen.com/loota/yctjx7/ezbin-challenges.zip, which I had already downloaded in previous exercises.
+
+I started by selecting *File* > *Import File* from Ghidra, navigating to the packd-file and confirming the selection.
+
+<img width="386" height="596" alt="kuva" src="https://github.com/user-attachments/assets/4118488f-dcff-4b83-b2e8-bb3b0407c9ad" />
+
+Ghidra recognized the file format as Executable and Linking Format (ELF).
+
+<img width="523" height="297" alt="kuva" src="https://github.com/user-attachments/assets/79ee539a-d9c0-4c9a-9f13-3abebd46bdc3" />
+
+After pressing *ok*, Ghidra gave me an Import Results Summary with some basic information about the import. The packd-file now appeared in the project directory inside Ghidra.
+
+<img width="304" height="144" alt="kuva" src="https://github.com/user-attachments/assets/b1c87936-d8cf-441b-b5e4-96f9f4b7eec0" />
+
+I double clicked on the packd-file which opened the CodeBrowser for it. For the *Analyze?*-popup I selected *Yes* and went with the default selected options.
+
+<img width="559" height="159" alt="kuva" src="https://github.com/user-attachments/assets/19ee7da4-bf21-4d11-a143-6425da23dcb1" />
+
+The default view displays mainly an analysis window in the middle and a Decompile window on the right side.
+
+<img width="1629" height="758" alt="kuva" src="https://github.com/user-attachments/assets/baeffcfa-4211-4937-8697-b363c5c55acf" />
+
+
+
+
+
+
+
+
+Source: Karvinen 2026.
 
 <br>
 
@@ -63,3 +102,5 @@ Ghidra was now installed and ready.
 Sources:
 
 Hammond, J. 27.4.2022. GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat'). Video. Watchable: https://www.youtube.com/watch?v=oTD_ki86c9I. Watched: 14.9.2026.
+
+Karvinen, T. 18.8.2026. Sovellusten hakkerointi - Application hacking and vulnerabilites. Readable: https://terokarvinen.com/application-hacking/. Read: 14.9.2026.
