@@ -104,24 +104,38 @@ Explanation of the program's operations in order:
 
 - Create `int`-type variable and name it `comparisonResult`.
 - Create `char`-type variable and name it `passwordInput`, and limit its length to 32 characters.
-- Use `puts`-function to print "What's the password?" into the terminal.
+- Use `puts`-function to print "What's the password?" into the terminal (Source: Geeksforgeeks 2025).
 - Use `scanf`-function to read user's input and store it into `passwordInput`-variable.
-- Use `strcomp`-function to compare `passwordInput` to preset string "piilos-AnAnAs".
+- Use `strcomp`-function to compare `passwordInput` to string "piilos-AnAnAs".
 - `strcomp`-function returns 0 if compared strings match, or another either positive or negative number, if not (Source: Cplusplus 2026). Result gets stored into `comparisonResult`-variable.
 - If `comparisonResult` is 0, use `puts` to print "Yes! That's the password..."
 - Otherwise (else) use `puts` to print "Sorry, no bonus."
 - Return 0 to exit the main function (end program).
 
+Now with this part done, I saved my work and closed the file on Ghidra.
 
+<br>
+
+References: Cplusplus 2026. Geeksforgeeks 2025. Karvinen 2026.  
+
+<br>
+
+## c) If backwards
+
+The next exercise asked to modify the passtr program's binary without the original source code so that it accepts all passwords except the correct one, and to demonstrate with tests that the program works.
+
+As with the *packd*-file, *passtr* was also downloaded in the previous exercise h3, so all I had to do is import it into Ghidra to start.
+
+<img width="524" height="302" alt="kuva" src="https://github.com/user-attachments/assets/a398cacc-0827-4c62-a793-02077aad4722" />
+
+I first found the main function and for readability renamed `iVar1` to `var1`, `local_58` to `var2`, and `local_3c` to `var3`.
+
+<img width="518" height="474" alt="kuva" src="https://github.com/user-attachments/assets/9e526395-360b-45f7-ac7e-04db42e2ad37" />
 
 
 <br>
 
 Reference: Karvinen 2026.
-
-<br>
-
-## c) 
 
 <br>
 
