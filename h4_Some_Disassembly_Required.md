@@ -22,20 +22,43 @@ Next I used the unzip tool to extract the files into a new directory.
 
 <img width="704" height="77" alt="kuva" src="https://github.com/user-attachments/assets/ea119a3e-f3a9-48c8-a36e-6ad4db5598ac" />
 
+I then ran the ghidraRun program, which after agreeing to the user agreement, opened the graphical interface of the program.
 
+<img width="411" height="42" alt="kuva" src="https://github.com/user-attachments/assets/a5bbbf43-672b-4d00-b533-0592213794a7" />
+
+From the ghidra program, I proceeded with creating a new project and called it *ghidra1*, which created several different ghidra-related files in my home directory:
+
+<img width="649" height="206" alt="kuva" src="https://github.com/user-attachments/assets/bda6e95f-f3ad-4253-af49-d232c8ef90ea" />
+
+The files were called *ghidra1.gpr  ghidra1.lock  ghidra1.lock~  ghidra1.rep*.
+
+The *.lock* and *.lock~* files only appeared when Ghidra was running:
+
+<img width="478" height="243" alt="kuva" src="https://github.com/user-attachments/assets/6de64a71-4925-47f5-b00f-7a6c5d64debe" />
+
+Ghidra was now installed and ready.
 
 <br>
 
 ## b) 
 
+<br>
+
 ## c) 
+
+<br>
 
 ## d) 
 
+<br>
+
 ## e) 
+
+<br>
 
 ## f) 
 
+<br>
 
 Sources:
 
