@@ -158,6 +158,27 @@ Reference: Tindall 2019.
 
 ## e) Nora crackme01 and Nora crackme01e
 
+Task was to complete crackme01 and crackme01e without looking at the source code.
+
+I downloaded crackme01.c from Tindall's github and used the command `make crackme01` as instructed in the readme.
+
+<img width="281" height="65" alt="kuva" src="https://github.com/user-attachments/assets/f2eb4e67-e12b-4963-8c55-e91ac347ff05" />
+
+Doing a test run of the program, it seemed like it was asking for some sort of input, and (at least) one specific input should cause it to exit with status code 0, as was the goal.
+
+<img width="260" height="170" alt="kuva" src="https://github.com/user-attachments/assets/4f5a1af1-6169-4313-acbf-b67043e94dbf" />
+
+Importing crackme01 into Ghidra and looking at the main function, I was honestly quite lost so I looked at the tutorial linked in the README.md.
+
+<img width="1629" height="665" alt="kuva" src="https://github.com/user-attachments/assets/56f9f23d-fddb-404f-85ce-e13244f26782" />
+
+<img width="285" height="375" alt="kuva" src="https://github.com/user-attachments/assets/3dac4cae-f6d6-406d-8983-5784cdc02be9" />
+
+
+<img width="264" height="67" alt="kuva" src="https://github.com/user-attachments/assets/d9d5410a-3071-44f6-bc15-268bbba788b7" />
+
+
+
 <br>
 
 Reference: Tindall 2023.
