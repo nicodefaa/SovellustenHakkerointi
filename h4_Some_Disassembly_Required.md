@@ -132,23 +132,43 @@ I first found the main function and for readability renamed `iVar1` to `var1`, `
 
 <img width="518" height="474" alt="kuva" src="https://github.com/user-attachments/assets/9e526395-360b-45f7-ac7e-04db42e2ad37" />
 
+It seemed like `var1`-variable was simply for the comparison whether the passwords match. 
 
+The way I understood the code, the program seemed to first add the correct password as strings into `var3` in 4 parts and that were in reverse order, using the `strncpy`-function.
 
-<br>
+It would then add the parts to `var2`-variable one at a time so they form in correct orientation as "sala-hakkeri-321".
 
-Reference: Karvinen 2026.
+I checked with python3 in terminal that 0x14 is hexadecimal for **20** and 0xf is hexadecimal for **15**.
 
-<br>
-
-## d) 
-
-<br>
-
-## e) 
+<img width="574" height="123" alt="kuva" src="https://github.com/user-attachments/assets/49f50e84-cdb7-4439-943c-7f8263ce2d75" />
 
 <br>
 
-## f) 
+References: Karvinen 2026. Geeksforgeeks 2026.
+
+<br>
+
+## d) README.md
+
+The task was to read the README.md from [https://github.com/NoraCodes/crackmes](https://github.com/NoraCodes/crackmes/blob/master/README.md).
+
+Reference: Tindall 2019.
+
+<br>
+
+## e) Nora crackme01 and Nora crackme01e
+
+<br>
+
+Reference: Tindall 2023.
+
+<br>
+
+## f) Nora crackme02
+
+<br>
+
+Reference: Tindall 2023.
 
 <br>
 
@@ -158,6 +178,12 @@ Cplusplus 2026. strcmp. Readable: https://cplusplus.com/reference/cstring/strcmp
 
 Geeksforgeeks 2025. puts() in C. Readable: https://www.geeksforgeeks.org/c/puts-in-c/. Read: 14.9.2026.
 
+Geeksforgeeks 2026. strncpy() Function in C. Readable: https://www.geeksforgeeks.org/c/strncpy-function-in-c/. Read: 14.9.2026.
+
 Hammond, J. 27.4.2022. GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat'). Video. Watchable: https://www.youtube.com/watch?v=oTD_ki86c9I. Watched: 14.9.2026.
 
 Karvinen, T. 18.8.2026. Sovellusten hakkerointi - Application hacking and vulnerabilites. Readable: https://terokarvinen.com/application-hacking/. Read: 14.9.2026.
+
+Tindall, L. 27.6.2019. Some Crackmes. Readable: https://github.com/NoraCodes/crackmes/blob/master/README.md. Read: 14.9.2026.
+
+Tindall, L. 2.4.2023. NoraCodes / crackmes. Github. Readable: https://github.com/NoraCodes/crackmes. Read: 14.9.2026.
