@@ -8,7 +8,7 @@
 - *ghidra** is an open source engineering tool developed by the National Security Agency of the United States. The binaries were released in March 2019.
 - **apt-cache search** command can be used to look up commands associated with different repositories.
 
-Source: Hammond 2022.
+Reference: Hammond 2022.
 
 <br>
 
@@ -40,7 +40,9 @@ The *.lock* and *.lock~* files only appeared when Ghidra was running:
 
 Ghidra was now installed and ready.
 
-Sources:
+<br>
+
+References:
 Hammond 2022.
 Karvinen 2026.
 
@@ -72,14 +74,50 @@ The default view displays mainly an analysis window in the middle and a Decompil
 
 <img width="1629" height="758" alt="kuva" src="https://github.com/user-attachments/assets/baeffcfa-4211-4937-8697-b363c5c55acf" />
 
+Using the Defined Strings tool (Window > Defined Strings), and the Symbol Tree -tool (open by default for me but also found in the Window-tab), I started inspecting different parts of the analysis and the decompiled variants:
+
+<img width="1191" height="553" alt="kuva" src="https://github.com/user-attachments/assets/04212d87-b140-497d-8023-f96bd4021dec" />
+
+<img width="1559" height="513" alt="kuva" src="https://github.com/user-attachments/assets/81b778f9-1cd8-4015-beb9-6ef61a9d7adf" />
+
+At this point I realized I had used the packed version of the file instead of the unpacked one. Since I had previously unpacked it into a new file, I imported my *packd_unpacked* file into Ghidra instead, using the same methods as described above, and continued the exercise.
+
+Now the contents of the Decompile-window especially looked much clearer. Decompiled entries closely resembled the source code, but was not a perfect 1:1.
+
+The first task was to find the main program, which could easily be found through the Symbol Tree:
+
+<img width="1629" height="641" alt="kuva" src="https://github.com/user-attachments/assets/d70661b2-0211-4b5f-aaf4-3e03814c980f" />
+
+The second task was to give variables descriptive names. This can be done by highlighting a variable in the decompile window, either right-clicking and selecting Rename Variable, or using the keyboard shortcut L.
+
+<img width="887" height="219" alt="kuva" src="https://github.com/user-attachments/assets/c028217f-544d-4f8d-8a58-86317604ed6a" />
+
+I renamed the two variables in the main function:
+
+`iVar1` > `comparisonResult`
+
+`local_28` > `passwordInput`
+
+<img width="517" height="324" alt="kuva" src="https://github.com/user-attachments/assets/c7c53f43-d1ab-4f15-8881-2b293bab921c" />
+
+Explanation of the program's operations in order:
+
+- Create `int`-type variable and name it `comparisonResult`.
+- Create `char`-type variable and name it `passwordInput`, and limit its length to 32 characters.
+- Use `puts`-function to print "What's the password?" into the terminal.
+- Use `scanf`-function to read user's input and store it into `passwordInput`-variable.
+- Use `strcomp`-function to compare `passwordInput` to preset string "piilos-AnAnAs".
+- `strcomp`-function returns 0 if compared strings match, or another either positive or negative number, if not (Source: Cplusplus 2026). Result gets stored into `comparisonResult`-variable.
+- If `comparisonResult` is 0, use `puts` to print "Yes! That's the password..."
+- Otherwise (else) use `puts` to print "Sorry, no bonus."
+- Return 0 to exit the main function (end program).
 
 
 
 
+<br>
 
-
-
-Source: Karvinen 2026.
+Reference: Karvinen 2026.
 
 <br>
 
@@ -99,7 +137,11 @@ Source: Karvinen 2026.
 
 <br>
 
-Sources:
+List of references:
+
+Cplusplus 2026. strcmp. Readable: https://cplusplus.com/reference/cstring/strcmp/. Read: 14.9.2026.
+
+Geeksforgeeks 2025. puts() in C. Readable: https://www.geeksforgeeks.org/c/puts-in-c/. Read: 14.9.2026.
 
 Hammond, J. 27.4.2022. GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat'). Video. Watchable: https://www.youtube.com/watch?v=oTD_ki86c9I. Watched: 14.9.2026.
 
