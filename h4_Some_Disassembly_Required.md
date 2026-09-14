@@ -14,13 +14,9 @@ Source: Hammond 2022.
 
 ## a) Installing Ghidra
 
-I downloaded the latest Ghidra version 12.1.3 from https://github.com/NationalSecurityAgency/ghidra/releases, as a zip file.
+I downloaded the latest Ghidra version 12.1.3 from https://github.com/NationalSecurityAgency/ghidra/releases, as a zip file. Next I used the unzip tool to extract the files into a new directory.
 
 <img width="385" height="156" alt="kuva" src="https://github.com/user-attachments/assets/9f3b1da2-dbef-4568-a4ec-565c2b7a7296" />
-
-Next I used the unzip tool to extract the files:
-
-<img width="417" height="61" alt="kuva" src="https://github.com/user-attachments/assets/955047ea-246b-438d-b51e-b59434d23775" />
 
 <img width="704" height="77" alt="kuva" src="https://github.com/user-attachments/assets/ea119a3e-f3a9-48c8-a36e-6ad4db5598ac" />
 
