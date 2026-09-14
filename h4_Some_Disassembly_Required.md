@@ -160,6 +160,8 @@ Reference: Tindall 2019.
 
 Task was to complete crackme01 and crackme01e without looking at the source code.
 
+### crackme01
+
 I downloaded crackme01.c from Tindall's github and used the command `make crackme01` as instructed in the readme.
 
 <img width="281" height="65" alt="kuva" src="https://github.com/user-attachments/assets/f2eb4e67-e12b-4963-8c55-e91ac347ff05" />
@@ -184,6 +186,23 @@ In hindsight the correct answer *password1* was also visible in the main functio
 
 <img width="470" height="104" alt="kuva" src="https://github.com/user-attachments/assets/475313c1-b8ac-40fb-9a0e-0120b32ad812" />
 
+### crackme01e
+
+Now that I knew where to look, this follow-up was (presumably) very easy to complete.
+
+<img width="308" height="64" alt="kuva" src="https://github.com/user-attachments/assets/cd9f69f7-8a3d-45b8-9c1d-5f02cde44ee6" />
+
+After making the executable file, this time I imported it into Ghidra and looked at the main function there again, where I found the string *slm!paas.k*:
+
+<img width="472" height="102" alt="kuva" src="https://github.com/user-attachments/assets/4136fb42-dbc0-478d-8125-87b7b1d8ffe3" />
+
+A minor problem I ran into was zsh interpreting the written password as some sort of command, even when written in quotes, but in single quotes it seemed to go through as just a string:
+
+<img width="252" height="192" alt="kuva" src="https://github.com/user-attachments/assets/ab8d5f5d-ca36-4acc-a3af-8d4eaaf228f2" />
+
+Using the `strings crackme01e` command also revealed the password similarly to the previous one:
+
+<img width="258" height="366" alt="kuva" src="https://github.com/user-attachments/assets/a4d486ec-99a7-4b9b-8da5-2d269db7bde0" />
 
 <br>
 
