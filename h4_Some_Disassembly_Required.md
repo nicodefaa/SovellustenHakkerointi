@@ -142,6 +142,24 @@ I checked with python3 in terminal that 0x14 is hexadecimal for **20** and 0xf i
 
 <img width="574" height="123" alt="kuva" src="https://github.com/user-attachments/assets/49f50e84-cdb7-4439-943c-7f8263ce2d75" />
 
+<img width="752" height="114" alt="kuva" src="https://github.com/user-attachments/assets/a04ca72e-ea45-4274-8a28-d5773e7a42a3" />
+
+<img width="502" height="349" alt="kuva" src="https://github.com/user-attachments/assets/48a88357-07c4-4e49-82a2-b81a4b0b4c4c" />
+
+<img width="671" height="71" alt="kuva" src="https://github.com/user-attachments/assets/33a71764-ecae-4132-b0ed-13f1b33f76a2" />
+
+<img width="261" height="281" alt="kuva" src="https://github.com/user-attachments/assets/60d42475-514c-4c37-a2d5-3ea21ce206b0" />
+
+<img width="341" height="229" alt="kuva" src="https://github.com/user-attachments/assets/58a4547e-a3eb-483b-9ccf-4d54b22d1b7e" />
+
+<img width="424" height="224" alt="kuva" src="https://github.com/user-attachments/assets/ac24a331-70da-4903-a137-3b3463f93fa7" />
+
+
+
+
+
+
+
 <br>
 
 References: Karvinen 2026. Geeksforgeeks 2026.
