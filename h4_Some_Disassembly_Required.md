@@ -210,7 +210,29 @@ Reference: Tindall 2023.
 
 <br>
 
-## f) Nora crackme02
+## f) crackme02
+
+For crackme02 I started similarly by using the `make crackme02` command and running the program:
+
+<img width="256" height="127" alt="kuva" src="https://github.com/user-attachments/assets/04d133a0-a1aa-4a46-b8e4-4c8e510c71cf" />
+
+`strings crackme02` revealed a string *password1* similar to crackme01:
+
+<img width="261" height="330" alt="kuva" src="https://github.com/user-attachments/assets/c04cdae7-3886-4554-8c7c-432c467b69ab" />
+
+But it was not the correct answer for this one:
+
+<img width="250" height="63" alt="kuva" src="https://github.com/user-attachments/assets/c3af36e9-2acb-4dea-a547-885f5c3146e2" />
+
+Next, I imported crackme02 into Ghidra to inspect the main function. I also renamed right away the variables `uVar1` into `a` and `local_c` into `b`:
+
+<img width="554" height="426" alt="kuva" src="https://github.com/user-attachments/assets/39fb9c23-4dad-4a1f-a6a3-12f8e6d51a40" />
+
+Without having much knowledge in C, it was hard to determine what the program was doing, so I looked at the [tutorial](https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/).
+
+
+
+
 
 <br>
 
