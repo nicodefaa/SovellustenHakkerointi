@@ -328,6 +328,8 @@ List of references:
 
 Claude Sonnet 5 model LLM was used to understand the code in task f.
 
+ChatGPT Luna 5.6 LLM was used to assist with finding the solution and using Ghidra in task c.
+
 Cplusplus 2026. strcmp. Readable: https://cplusplus.com/reference/cstring/strcmp/. Read: 14.9.2026.
 
 Geeksforgeeks 2025. puts() in C. Readable: https://www.geeksforgeeks.org/c/puts-in-c/. Read: 14.9.2026.
