@@ -230,13 +230,19 @@ Next, I imported crackme02 into Ghidra to inspect the main function. I also rena
 
 Without having much knowledge in C, it was hard to determine what the program was doing, so I looked at the [tutorial](https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/).
 
+The tutorial suggested using the objdump-tool to inspect the binary with the command `objdump -d crackme02 -Mintel | less`, look specifically at the *Disassembly of section .text* -header's *<main>* -section.
+
+<img width="951" height="715" alt="kuva" src="https://github.com/user-attachments/assets/5654d5be-8b5c-4d4e-94a3-9d282b6d10f7" />
+
+<img width="833" height="697" alt="kuva" src="https://github.com/user-attachments/assets/b0f591cc-0b76-41d9-a292-ef92280922f2" />
+
 
 
 
 
 <br>
 
-Reference: Tindall 2023.
+References: Tindall 2023. Tindall 2017.
 
 <br>
 
@@ -251,6 +257,8 @@ Geeksforgeeks 2026. strncpy() Function in C. Readable: https://www.geeksforgeeks
 Hammond, J. 27.4.2022. GHIDRA for Reverse Engineering (PicoCTF 2022 #42 'bbbloat'). Video. Watchable: https://www.youtube.com/watch?v=oTD_ki86c9I. Watched: 14.9.2026.
 
 Karvinen, T. 18.8.2026. Sovellusten hakkerointi - Application hacking and vulnerabilites. Readable: https://terokarvinen.com/application-hacking/. Read: 14.9.2026.
+
+Tindall, L. 16.11.2017. An Intro to x86_64 Reverse Engineering. Readable: https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/. Read: 15.9.2026.
 
 Tindall, L. 27.6.2019. Some Crackmes. Readable: https://github.com/NoraCodes/crackmes/blob/master/README.md. Read: 14.9.2026.
 
