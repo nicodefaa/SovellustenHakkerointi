@@ -236,8 +236,9 @@ The tutorial suggested using the objdump-tool to inspect the binary with the com
 
 <img width="833" height="697" alt="kuva" src="https://github.com/user-attachments/assets/b0f591cc-0b76-41d9-a292-ef92280922f2" />
 
+My results looked very different from the example in the tutorial:
 
-
+<img width="1429" height="292" alt="kuva" src="https://github.com/user-attachments/assets/55485ec5-0e67-4fa0-a6a3-d31a53445858" />
 
 
 <br>
