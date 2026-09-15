@@ -230,15 +230,54 @@ Next, I imported crackme02 into Ghidra to inspect the main function. I also rena
 
 Without having much knowledge in C, it was hard to determine what the program was doing, so I looked at the [tutorial](https://nora.codes/tutorial/an-intro-to-x86_64-reverse-engineering/).
 
-The tutorial suggested using the objdump-tool to inspect the binary with the command `objdump -d crackme02 -Mintel | less`, look specifically at the *Disassembly of section .text* -header's *<main>* -section.
+The tutorial suggested using the objdump-tool to inspect the binary with the command `objdump -d crackme02 -Mintel | less`, look specifically at the *Disassembly of section .text* -header's *main*-section.
 
 <img width="951" height="715" alt="kuva" src="https://github.com/user-attachments/assets/5654d5be-8b5c-4d4e-94a3-9d282b6d10f7" />
 
 <img width="833" height="697" alt="kuva" src="https://github.com/user-attachments/assets/b0f591cc-0b76-41d9-a292-ef92280922f2" />
 
-My results looked very different from the example in the tutorial:
+My initial results looked very different from the example in the tutorial, which I'm not sure was intentional or not:
 
 <img width="1429" height="292" alt="kuva" src="https://github.com/user-attachments/assets/55485ec5-0e67-4fa0-a6a3-d31a53445858" />
+
+I also used grep to see if there were multiple main-sections and I was looking at the wrong one, but there was only one to be found:
+
+<img width="362" height="62" alt="kuva" src="https://github.com/user-attachments/assets/c7d04e12-1bd3-4934-9b7d-1f84da3bc2d8" />
+
+I tried to read through the tutorial several times, and while it provided the correct answer, which I also tested to work, I could not understand the process fully.
+
+The tutorial provided a much clearer constructed version of the code than the one from Ghidra, in my opinion.
+
+```
+int main(int argc, char** argv){
+    if (argc != 2) {
+        puts("Need exactly one argument.");
+        return -1;
+    }
+
+    if (argv[1][0] == 0) {
+        printf("Yes, %s is correct.", argv[1]);
+    }
+
+    // Magic happens here
+}
+```
+
+*Code copied from the tutorial (Tindall 2017).*
+
+I also used Claude Sonnet 5 to explain this code to me:
+
+
+- argc = argument count, a number to check how many words are typed (including the program name).
+- argv = argument vector, a list of the words as text, starting from argv[0] as the program name, and argv[1] as the first input/argument.
+- `argc !=2` checks if the number of command line arguments is different from 2 (program name + input), then prints error message and returns -1 to exit, if true.
+- `argv[1][0] == 0` checks if the first character of the string user passed in is 0 byte ("\0"), which marks the end of the string. `[1]` being the user's string and the following `[0]` being the first character from that.
+- In simple terms the code was checking if the input was an empty string.
+
+The correct answer was to input an empty string for the program.
+
+<img width="231" height="55" alt="kuva" src="https://github.com/user-attachments/assets/bfd5fe40-e2f6-4ad5-946a-c18ad9dba112" />
+
 
 
 <br>
@@ -248,6 +287,8 @@ References: Tindall 2023. Tindall 2017.
 <br>
 
 List of references:
+
+Claude Sonnet 5 model LLM was used to understand the code in task f.
 
 Cplusplus 2026. strcmp. Readable: https://cplusplus.com/reference/cstring/strcmp/. Read: 14.9.2026.
 
