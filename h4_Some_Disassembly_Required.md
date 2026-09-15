@@ -154,26 +154,31 @@ The change was made by first right-clicking the line and choosing *Patch Instruc
 
 <img width="752" height="114" alt="kuva" src="https://github.com/user-attachments/assets/a04ca72e-ea45-4274-8a28-d5773e7a42a3" />
 
-Afterwards the text became editable and I made the change from *JNZ* to *JZ*:
+<br>
 
 <img width="502" height="349" alt="kuva" src="https://github.com/user-attachments/assets/48a88357-07c4-4e49-82a2-b81a4b0b4c4c" />
 
-
+Afterwards the text became editable and I made the change from *JNZ* to *JZ*:
 
 <img width="671" height="71" alt="kuva" src="https://github.com/user-attachments/assets/33a71764-ecae-4132-b0ed-13f1b33f76a2" />
 
+Next to save the changes and to export the program, *File*-menu > *Export Program*:
+
 <img width="261" height="281" alt="kuva" src="https://github.com/user-attachments/assets/60d42475-514c-4c37-a2d5-3ea21ce206b0" />
+
+I changed the format to Original File and saved it to my home directory as *passtr_flipped*:
 
 <img width="341" height="229" alt="kuva" src="https://github.com/user-attachments/assets/58a4547e-a3eb-483b-9ccf-4d54b22d1b7e" />
 
+The program was not executable by default, so I had to add the permissions with `chmod u+x passtr_flipped`:
+
 <img width="424" height="224" alt="kuva" src="https://github.com/user-attachments/assets/ac24a331-70da-4903-a137-3b3463f93fa7" />
+
+Now after running the program, I first tested the correct password *sala-hakkeri-321* which resulted in the "Sorry, no bonus." message, while other inputs resulted in "Yes! That's the password. FLAG...":
 
 <img width="505" height="468" alt="kuva" src="https://github.com/user-attachments/assets/1cec9be3-20e5-4660-aef5-d755c430984e" />
 
-
-
-
-
+The if-rule had now been flipped around, task done.
 
 <br>
 
