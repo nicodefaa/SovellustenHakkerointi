@@ -140,11 +140,25 @@ It would then add the parts to `var2`-variable one at a time so they form in cor
 
 I checked with python3 in terminal that 0x14 is hexadecimal for **20** and 0xf is hexadecimal for **15**.
 
+Because I had not used Ghidra before, I used ChatGPT-5.6 Luna LLM to assist me with finding the solution, and using Ghidra to make changes and exporting the file.
+
+ChatGPT instructed me to change from JNZ (Jump if not Zero) to JZ (Jump if Zero) in the assembler window:
+
 <img width="574" height="123" alt="kuva" src="https://github.com/user-attachments/assets/49f50e84-cdb7-4439-943c-7f8263ce2d75" />
+
+Where it previously jumped to this section if not zero, if now jumps to it *if zero*:
+
+<img width="837" height="89" alt="kuva" src="https://github.com/user-attachments/assets/d4c63308-2f13-4f4b-9c67-f436fc2620a2" />
+
+The change was made by first right-clicking the line and choosing *Patch Instruction*:
 
 <img width="752" height="114" alt="kuva" src="https://github.com/user-attachments/assets/a04ca72e-ea45-4274-8a28-d5773e7a42a3" />
 
+Afterwards the text became editable and I made the change from *JNZ* to *JZ*:
+
 <img width="502" height="349" alt="kuva" src="https://github.com/user-attachments/assets/48a88357-07c4-4e49-82a2-b81a4b0b4c4c" />
+
+
 
 <img width="671" height="71" alt="kuva" src="https://github.com/user-attachments/assets/33a71764-ecae-4132-b0ed-13f1b33f76a2" />
 
@@ -154,6 +168,7 @@ I checked with python3 in terminal that 0x14 is hexadecimal for **20** and 0xf i
 
 <img width="424" height="224" alt="kuva" src="https://github.com/user-attachments/assets/ac24a331-70da-4903-a137-3b3463f93fa7" />
 
+<img width="505" height="468" alt="kuva" src="https://github.com/user-attachments/assets/1cec9be3-20e5-4660-aef5-d755c430984e" />
 
 
 
