@@ -34,3 +34,9 @@ Also unzipped the nested zip-files with `unzip filename.zip` (e.g. unzip lab0.zi
 <br>
 
 ¤¤ 6 Lab4
+
+
+
+List of references:
+
+Karvinen, T. & Iso-Anttila, L. 2026. Sovellusten hakkerointi - Application hacking and vulnerabilities. Readable: https://terokarvinen.com/application-hacking/. Read: 20.9.2026.
