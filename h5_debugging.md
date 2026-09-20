@@ -48,6 +48,20 @@ Command broken down:
 
 <img width="629" height="312" alt="kuva" src="https://github.com/user-attachments/assets/48c8674b-d333-4f22-af4c-4156d854badc" />
 
+Listing the full program from beginning with `list .`:
+
+<img width="307" height="438" alt="kuva" src="https://github.com/user-attachments/assets/99fee7b0-9ceb-423f-bed6-c8a0c32b4043" />
+
+Setting a break point on main `break main`, and `info breakpoints` to see currently active breakpoints. `delete <breakpoint number>` (e.g. `delete 2`) to remove the chosen breakpoint.
+
+<img width="614" height="194" alt="kuva" src="https://github.com/user-attachments/assets/d2cb8681-dd18-4c3b-8ebe-be41783bf2d9" />
+
+`run` to run the program -> pauses at breakpoint -> `next` to go to the next line -> giving an empty command (pressing enter) does the previously used command again (`next` here)
+
+program asks for number input between 10 and 11 because of the line `cin>>n;`
+
+<img width="644" height="435" alt="kuva" src="https://github.com/user-attachments/assets/aa80d67e-52f5-4009-b8cf-68243b9dbf5c" />
+
 
 <br>
 
