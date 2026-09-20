@@ -58,7 +58,7 @@ Setting a break point on main `break main`, and `info breakpoints` to see curren
 
 `run` to run the program -> pauses at breakpoint -> `next` to go to the next line -> giving an empty command (pressing enter) does the previously used command again (`next` here)
 
-program asks for number input between 10 and 11 because of the line `cin>>n;`
+Program asks for user input after line 10 because of `cin>>n;`, which asks for user input and stores it into the variable `n`.
 
 <img width="644" height="435" alt="kuva" src="https://github.com/user-attachments/assets/aa80d67e-52f5-4009-b8cf-68243b9dbf5c" />
 
@@ -96,5 +96,7 @@ program asks for number input between 10 and 11 because of the line `cin>>n;`
 <br>
 
 List of references:
+
+Geeksforgeeks 2026. cin in C++. Readable: https://www.geeksforgeeks.org/cpp/cin-in-c/. Read: 20.9.2026.
 
 Karvinen, T. & Iso-Anttila, L. 2026. Sovellusten hakkerointi - Application hacking and vulnerabilities. Readable: https://terokarvinen.com/application-hacking/. Read: 20.9.2026.
