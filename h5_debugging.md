@@ -18,10 +18,34 @@ The instructions stated we would be using GNU Debugger for these tasks, so I dow
 
 <img width="636" height="122" alt="kuva" src="https://github.com/user-attachments/assets/69906437-879c-432b-9fa5-2599acb6d903" />
 
-
 <br>
 
 ## 1. main.cpp
+
+Compiling main.cpp for debugging with `g++ main.cpp -g -Wall -Werror -o main-dbg`:
+
+<img width="438" height="125" alt="kuva" src="https://github.com/user-attachments/assets/aee26d21-3888-44cf-93e8-c73c966eb760" />
+
+Command broken down:
+
+`g++` = using GNU C++ compiler
+
+`main.cpp` = source file to compile
+
+`-g` = adds debug information to the executable file
+
+`-Wall` = enables all compiler warnings
+
+`-Werror` = treat warnings as errors, preventing the creation of executable file if any are found
+
+`-o main-dbg` = names the resulting executable main-dbg
+
+---
+
+`gdb ./main-dbg` to load the program into DNU debugger:
+
+<img width="629" height="312" alt="kuva" src="https://github.com/user-attachments/assets/48c8674b-d333-4f22-af4c-4156d854badc" />
+
 
 <br>
 
