@@ -125,6 +125,9 @@ Let's inspect the steps again as well. `break main` to create a breakpoint and t
 
 <img width="479" height="268" alt="kuva" src="https://github.com/user-attachments/assets/adb786c4-3ee0-49b5-9887-959784563eaf" />
 
+Running the program all at once seems to give the intended results where it stops at "Element 4: 5" however:
+
+<img width="211" height="349" alt="kuva" src="https://github.com/user-attachments/assets/0202bf4b-ee68-4d30-a073-9c531cf3e286" />
 
 <br>
 
