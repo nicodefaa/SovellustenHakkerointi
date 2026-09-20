@@ -44,11 +44,11 @@ Command broken down:
 
 <br>
 
-`gdb ./main-dbg` to load the program into DNU debugger:
+`gdb ./main-dbg` to load the program into DNU debugger.
 
 <img width="629" height="312" alt="kuva" src="https://github.com/user-attachments/assets/48c8674b-d333-4f22-af4c-4156d854badc" />
 
-Listing the full program from beginning with `list .`:
+Listing the full program from beginning with `list .`.
 
 <img width="307" height="438" alt="kuva" src="https://github.com/user-attachments/assets/99fee7b0-9ceb-423f-bed6-c8a0c32b4043" />
 
@@ -58,7 +58,7 @@ Setting a break point on main `break main`, and `info breakpoints` to see curren
 
 `run` to run the program -> pauses at breakpoint -> `next` to go to the next line -> giving an empty command (pressing enter) does the previously used command again (`next` here)
 
-Program asks for user input after line 10 because of `cin>>n;`, which asks for user input and stores it into the variable `n`.
+On line 10 the program uses `cin>>n;` to ask for user input and stores it into the variable `n` (Source: Geeksforgeeks).
 
 <img width="644" height="435" alt="kuva" src="https://github.com/user-attachments/assets/aa80d67e-52f5-4009-b8cf-68243b9dbf5c" />
 
