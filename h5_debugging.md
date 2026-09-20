@@ -2,7 +2,9 @@
 
 Work environment: Kali GNU/Linux version 2026.3 (Virtual Machine)
 
-I started by downloading the exercise files from [Moodle ](https://hhmoodle.haaga-helia.fi/mod/folder/view.php?id=3754943) (requires login and privileges to view/download).
+I started by downloading the exercise files from [Moodle](https://hhmoodle.haaga-helia.fi/mod/folder/view.php?id=3754943) (requires login and privileges to view/download). 
+
+Then used the *unzip*-program with the `-d` option to unzip the files into a new directory:
 
 <img width="491" height="319" alt="kuva" src="https://github.com/user-attachments/assets/ef2d927e-4526-40b2-95b8-b956445558c9" />
 
