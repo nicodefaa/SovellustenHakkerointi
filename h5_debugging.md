@@ -2,7 +2,9 @@
 
 Work environment: Kali GNU/Linux version 2026.3 (Virtual Machine)
 
-I started by downloading the exercise files from [Moodle](https://hhmoodle.haaga-helia.fi/mod/folder/view.php?id=3754943) (requires login and privileges to view/download). 
+## Preparation
+
+I started by downloading the exercise files from [Moodle](https://hhmoodle.haaga-helia.fi/mod/folder/view.php?id=3754943) (requires login and permissions to view/download). 
 
 Then used the *unzip*-program with the `-d` option to unzip the files into a new directory:
 
@@ -12,6 +14,12 @@ Also unzipped the nested zip-files with `unzip filename.zip` (e.g. unzip lab0.zi
 
 <img width="535" height="268" alt="kuva" src="https://github.com/user-attachments/assets/c7aacb31-ecfb-46d6-8789-b9dd412c2031" />
 
+The instructions stated we would be using GNU Debugger for these tasks, so I downloaded it with `sudo apt install gdb`:
+
+<img width="636" height="122" alt="kuva" src="https://github.com/user-attachments/assets/69906437-879c-432b-9fa5-2599acb6d903" />
+
+
+<br>
 
 ## 1. main.cpp
 
