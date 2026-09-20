@@ -1,5 +1,9 @@
 # h5 Binääri tässä, missä koodi? (Debugging)
 
+Work environment:
+
+Kali Linux (Virtual Machine)
+
 ## 1. main.cpp
 
 <br>
