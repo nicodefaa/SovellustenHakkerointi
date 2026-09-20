@@ -62,6 +62,19 @@ On line 10 the program uses `cin>>n;` to ask for user input and stores it into t
 
 <img width="644" height="435" alt="kuva" src="https://github.com/user-attachments/assets/aa80d67e-52f5-4009-b8cf-68243b9dbf5c" />
 
+The value on variable n can be inspected with `print n` while the execution is paused. It starts off at 0 and changes after user inputs a number.
+
+<img width="317" height="232" alt="kuva" src="https://github.com/user-attachments/assets/932d533b-fb27-4e8d-8716-af323d20db67" />
+
+The program accepts a non-int input but does not store it into the variable:
+
+<img width="304" height="216" alt="kuva" src="https://github.com/user-attachments/assets/6889eae1-f8df-4350-9d0c-b53c3973937a" />
+
+Using `next` after line 11 `long val=factorial(n);` will execute the whole `factional()`-function and stop on the next line in `main`-function, while using `step` will jump inside the function and allows to look through the calculations inside with `next`.
+
+<img width="565" height="775" alt="kuva" src="https://github.com/user-attachments/assets/cb72cb80-46a0-447b-b82c-f523d94612d0" />
+
+
 
 <br>
 
