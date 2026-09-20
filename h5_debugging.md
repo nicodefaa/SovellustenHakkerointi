@@ -89,6 +89,27 @@ Printing allows to inspect the value of variables in between the code running. `
 
 ## 2. Lab0
 
+Starting point: `buggy_program.c` source code file and a compiled `buggy_program` executable file.
+
+<img width="642" height="502" alt="kuva" src="https://github.com/user-attachments/assets/ae8e29dc-f71f-4f56-ba28-3db2f4b5d5ae" />
+
+*The problem can already be deducted directly from the source code and running the program, but the purpose of this exercise is to practice using the debugger.*
+
+Running executable program on the debugger with `gdb ./buggy_program`, and inspecting the code with `list`.
+
+<img width="476" height="487" alt="kuva" src="https://github.com/user-attachments/assets/bc94752d-e68a-46fc-a601-1655c5bdb2c9" />
+
+Start by creating breakpoint at main. `ì` = `info`, `b` = `breakpoints`.
+
+<img width="656" height="92" alt="kuva" src="https://github.com/user-attachments/assets/3a649d17-3c0e-4836-925b-78a815e9881e" />
+
+`r` (run) to run the program, `n` (next) to move forward, `s` (step) to move inside functions, `p` (print) to inspect values in between.
+
+<img width="493" height="442" alt="kuva" src="https://github.com/user-attachments/assets/e872b7e9-092e-40d4-8a8c-80a6c58ab8be" />
+
+According to the test above we can see the for-loop's contents continue to execute between `i` being 4 and 5, but not after it's 5, which is slightly confusing.
+
+
 <br>
 
 ---
