@@ -41,9 +41,9 @@ The instructions stated we would be using GNU Debugger for these tasks, so I dow
 
 <br>
 
-¤¤ 6 Lab4
+## 6. Lab4
 
-
+<br>
 
 List of references:
 
