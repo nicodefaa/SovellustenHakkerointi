@@ -78,7 +78,7 @@ Printing allows to inspect the value of variables in between the code running. `
 
 <img width="233" height="443" alt="kuva" src="https://github.com/user-attachments/assets/371708a4-7d16-4346-84d0-0bf8c6e1f9f3" />
 
-`shell`-prefix allows executing regular shell commands while dbg is running (e.g. `shell pwd`).
+`shell`-prefix allows executing regular shell commands while dbg is running (e.g. `shell ls -l`).
 
 <img width="433" height="130" alt="kuva" src="https://github.com/user-attachments/assets/dfeea470-f360-4681-b8c9-541b8007dc88" />
 
