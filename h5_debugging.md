@@ -121,7 +121,7 @@ Now we run the new program on GNU debugger with `gdb ./buggy_program_fixed`. Ini
 
 <img width="206" height="160" alt="kuva" src="https://github.com/user-attachments/assets/ae048c23-e431-4a95-b4f7-be8cae6d6db9" />
 
-Let's inspect the steps again as well. `break main` to create a breakpoint and then `run`. Now looking at the last times the for-loop runs and where `i`'s value changes, we can see the `printf` no longer executes after `i` is 4.
+Let's inspect the steps again as well. `break main` to create a breakpoint and then `run`. Now looking at the last times the for-loop runs and where `i`'s value changes, we can see the `printf` no longer executes after `i` is 4, which again is a little confusing on the debugger.
 
 <img width="479" height="268" alt="kuva" src="https://github.com/user-attachments/assets/adb786c4-3ee0-49b5-9887-959784563eaf" />
 
