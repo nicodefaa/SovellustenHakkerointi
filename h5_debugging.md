@@ -74,7 +74,9 @@ Using `next` after line 11 `long val=factorial(n);` will execute the whole `fact
 
 <img width="565" height="775" alt="kuva" src="https://github.com/user-attachments/assets/cb72cb80-46a0-447b-b82c-f523d94612d0" />
 
+Printing allows to inspect the value of variables in between the code running. `p` is alias for `print` and `n` for `next`.
 
+<img width="233" height="443" alt="kuva" src="https://github.com/user-attachments/assets/371708a4-7d16-4346-84d0-0bf8c6e1f9f3" />
 
 <br>
 
