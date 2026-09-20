@@ -107,8 +107,15 @@ Start by creating breakpoint at main. `ì` = `info`, `b` = `breakpoints`.
 
 <img width="493" height="442" alt="kuva" src="https://github.com/user-attachments/assets/e872b7e9-092e-40d4-8a8c-80a6c58ab8be" />
 
-According to the test above we can see the for-loop's contents continue to execute between `i` being 4 and 5, but not after it's 5, which is slightly confusing.
+According to the test above we can see the for-loop's contents happen between `i` being 4 and 5, but not after it's 5, which is slightly confusing with `size` being 5 and the condition being `i <= size`.
 
+From the output we can clearly see however that the program prints an unintentional line *Element 5: 0*, which means it's executing for-loop's prinf one too many times.
+
+To fix this, let's open the source file `buggy_program.c` in a text editor with `micro buggy_program.c` and change the `i <= size` condition on line 4 to `i < size`.
+
+<img width="432" height="212" alt="kuva" src="https://github.com/user-attachments/assets/527f664f-74d0-4922-a631-af7de13ebeeb" />
+
+Save, then compile into a new file with `gcc buggy_program.c -o buggy_program_fixed`.
 
 <br>
 
