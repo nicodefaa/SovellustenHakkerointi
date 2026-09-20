@@ -70,13 +70,18 @@ The program accepts a non-int input but does not store it into the variable:
 
 <img width="304" height="216" alt="kuva" src="https://github.com/user-attachments/assets/6889eae1-f8df-4350-9d0c-b53c3973937a" />
 
-Using `next` after line 11 `long val=factorial(n);` will execute the whole `factional()`-function and stop on the next line in `main`-function, while using `step` will jump inside the function and allows to look through the calculations inside with `next`.
+Using `next` after line 11 `long val=factorial(n);` will execute the whole `factional()`-function and only stop on the next line in `main`-function, while using `step` will jump inside the function and allows to look through the calculations inside with `next`.
 
 <img width="565" height="775" alt="kuva" src="https://github.com/user-attachments/assets/cb72cb80-46a0-447b-b82c-f523d94612d0" />
 
 Printing allows to inspect the value of variables in between the code running. `p` is alias for `print` and `n` for `next`.
 
 <img width="233" height="443" alt="kuva" src="https://github.com/user-attachments/assets/371708a4-7d16-4346-84d0-0bf8c6e1f9f3" />
+
+`shell`-prefix allows executing regular shell commands while dbg is running (e.g. `shell pwd`).
+
+<img width="433" height="130" alt="kuva" src="https://github.com/user-attachments/assets/dfeea470-f360-4681-b8c9-541b8007dc88" />
+
 
 <br>
 
