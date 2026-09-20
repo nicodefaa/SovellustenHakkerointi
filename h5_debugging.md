@@ -20,6 +20,8 @@ The instructions stated we would be using GNU Debugger for these tasks, so I dow
 
 <br>
 
+---
+
 ## 1. main.cpp
 
 Compiling main.cpp for debugging with `g++ main.cpp -g -Wall -Werror -o main-dbg`:
@@ -40,7 +42,7 @@ Command broken down:
 
 `-o main-dbg` = names the resulting executable main-dbg
 
----
+<br>
 
 `gdb ./main-dbg` to load the program into DNU debugger:
 
@@ -49,21 +51,31 @@ Command broken down:
 
 <br>
 
+---
+
 ## 2. Lab0
 
 <br>
+
+---
 
 ## 3. Lab1
 
 <br>
 
+---
+
 ## 4. Lab2
 
 <br>
 
+---
+
 ## 5. Lab3
 
 <br>
+
+---
 
 ## 6. Lab4
 
