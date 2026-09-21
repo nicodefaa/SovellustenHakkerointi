@@ -135,7 +135,9 @@ Running the program all at once now seems to give the intended results where it 
 
 ## 3. Lab1
 
-Starting point; files, source code and execution of the program:
+Goal: To inspect why the program crashes and if/how it can be fixed.
+
+Starting point: source code file and executable program.
 
 <img width="477" height="558" alt="kuva" src="https://github.com/user-attachments/assets/22d59d38-53ca-4f7b-ac75-8d613b0d8140" />
 
@@ -155,19 +157,23 @@ H (72) becomes I (73) --> J (74) --> K (75)
 
 e (101) becomes f (102) --> g (103) --> h (104)
 
+So *Hello, world.* becomes *Khoor/#zruog1*
+
 etc..
 
 (Reference: Ascii-Code.com)
 
+Then once the full string has been gone through and transformed, it gets printed.
+
 Because `good_message` is used to call the `print_scrambled`-function first, it works properly. 
 
-Since `bad_message`'s value is set to NULL, and not a proper string like ``print_scrambled`-function expects, it results in an error.
+But since `bad_message`'s value is set to NULL, and not a proper string like ``print_scrambled`-function expects, it results in an error.
 
 To fix this, we simply need to change the value of `bad_message` to a proper string in the source code:
 
 <img width="362" height="117" alt="kuva" src="https://github.com/user-attachments/assets/ec2b16e8-c5e2-4fa8-abb4-0391d304e780" />
 
-*line 14: `NULL` changed to `"fixed?"`*
+*line 14: `NULL` changed to a string `"fixed?"`*
 
 `gcc gdb_example1.c -g -Wall -Werror -o gdb_example1_fixed` to compile into a new executable file.
 
@@ -181,6 +187,21 @@ Running the program now works properly for both strings:
 ---
 
 ## 4. Lab2
+
+Staring point: We have an executable file, but no source code.
+
+Goal: To find out the password for the program and receive the printed flag.
+
+<img width="456" height="144" alt="kuva" src="https://github.com/user-attachments/assets/09a619c1-b6b4-42c3-abcc-7228e8ae382d" />
+
+Reading the README.md I figured the only file we are supposed to be using is `passtr2o`, and the `passtr` and `passtr.c` are possibly just leftover files. These were also the files we had used in [previous execises](https://github.com/nicodefaa/SovellustenHakkerointi/blob/main/h3_No_strings_attached.md).
+
+The first thing I tested though was whether the password would be the same as in the other program:
+
+<img width="478" height="513" alt="kuva" src="https://github.com/user-attachments/assets/7b21264c-6c0c-48a0-88c6-d2a141657e94" />
+
+
+
 
 <br>
 
