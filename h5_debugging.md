@@ -200,6 +200,11 @@ The first thing I tested though was whether the password would be the same as in
 
 <img width="478" height="513" alt="kuva" src="https://github.com/user-attachments/assets/7b21264c-6c0c-48a0-88c6-d2a141657e94" />
 
+The answer was no, so next step was to open it in GNU debugger. I also checked `strings passtr2o` but it revealed nothing interesting. 
+
+According to GDB the file didn't have any debugging symbols.
+
+<img width="445" height="137" alt="kuva" src="https://github.com/user-attachments/assets/71fe33b7-c42f-45e0-92d9-06fd6f5790e5" />
 
 
 
