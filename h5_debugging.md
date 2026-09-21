@@ -210,6 +210,19 @@ Trying to set a breakpoint at line 1 was not possible, and setting a breakpoint 
 
 <img width="658" height="390" alt="kuva" src="https://github.com/user-attachments/assets/4bd2ebe8-bbb4-4328-b103-b0ced60ea535" />
 
+I tried to fish for variable names with `p pass`... which autofilled a variable called `passwd2des` for me. 
+
+`whatis passwd2des` revealed it being a text variable, but had no debug info. I also tried to use the variable name as the password for the program, but no luck.
+
+<img width="639" height="388" alt="kuva" src="https://github.com/user-attachments/assets/40088d8b-ab91-4586-9123-c804eed9b9d1" />
+
+I tested many different `info`-commands, but most of them gave nothing. `info functions` revealed a very long list of non-debugging symbols:
+
+<img width="393" height="424" alt="kuva" src="https://github.com/user-attachments/assets/4f49a17b-b62e-4e4f-93d9-01d44ce875c1" />
+
+
+
+
 
 
 <br>
