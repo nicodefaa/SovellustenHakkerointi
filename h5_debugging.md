@@ -206,6 +206,10 @@ According to GDB the file didn't have any debugging symbols.
 
 <img width="445" height="137" alt="kuva" src="https://github.com/user-attachments/assets/71fe33b7-c42f-45e0-92d9-06fd6f5790e5" />
 
+Trying to set a breakpoint at line 1 was not possible, and setting a breakpoint at main just ran the program until the password input was asked.
+
+<img width="658" height="390" alt="kuva" src="https://github.com/user-attachments/assets/4bd2ebe8-bbb4-4328-b103-b0ced60ea535" />
+
 
 
 <br>
