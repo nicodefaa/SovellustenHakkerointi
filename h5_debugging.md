@@ -58,7 +58,7 @@ Setting a break point on main `break main`, and `info breakpoints` to see curren
 
 `run` to run the program -> pauses at breakpoint -> `next` to go to the next line -> giving an empty command (pressing enter) does the previously used command again (`next` here)
 
-On line 10 the program uses `cin>>n;` to ask for user input and stores it into the variable `n` (Source: Geeksforgeeks).
+On line 10 the program uses `cin>>n;` to ask for user input and stores it into the variable `n` (Reference: Geeksforgeeks).
 
 <img width="644" height="435" alt="kuva" src="https://github.com/user-attachments/assets/aa80d67e-52f5-4009-b8cf-68243b9dbf5c" />
 
@@ -135,10 +135,45 @@ Running the program all at once now seems to give the intended results where it 
 
 ## 3. Lab1
 
-Starting point files, source code and execution of the program:
+Starting point; files, source code and execution of the program:
 
 <img width="477" height="558" alt="kuva" src="https://github.com/user-attachments/assets/22d59d38-53ca-4f7b-ac75-8d613b0d8140" />
 
+`run`ning the program, using `n`ext to move forward, and `p`rinting variable values between lines: 
+
+<img width="589" height="474" alt="kuva" src="https://github.com/user-attachments/assets/ede5b6e8-d7c0-4e54-861a-698d4bbc1acf" />
+
+How I interpreted the function of the program:
+
+The main function gives variables `good_message` and `bad_message` specific values and calls for function `print_scrambled` with them.
+
+`print_scrambled`-function takes one character at the time from the string and adds `i` (3) to its ASCII value.
+
+For example: 
+
+H (72) becomes I (73) --> J (74) --> K (75)
+
+e (101) becomes f (102) --> g (103) --> h (104)
+
+etc..
+
+(Reference: Ascii-Code.com)
+
+Because `good_message` is used to call the `print_scrambled`-function first, it works properly. 
+
+Since `bad_message`'s value is set to NULL, and not a proper string like ``print_scrambled`-function expects, it results in an error.
+
+To fix this, we simply need to change the value of `bad_message` to a proper string in the source code:
+
+<img width="362" height="117" alt="kuva" src="https://github.com/user-attachments/assets/ec2b16e8-c5e2-4fa8-abb4-0391d304e780" />
+
+*line 14: `NULL` changed to `"fixed?"`*
+
+`gcc gdb_example1.c -g -Wall -Werror -o gdb_example1_fixed` to compile into a new executable file.
+
+Running the program now works properly for both strings:
+
+<img width="391" height="75" alt="kuva" src="https://github.com/user-attachments/assets/af8674f5-58c5-4f0a-9d6b-80a59327e1a2" />
 
 
 <br>
@@ -162,6 +197,8 @@ Starting point files, source code and execution of the program:
 <br>
 
 List of references:
+
+Ascii-Code.com. ASCII Table. Readable: https://www.ascii-code.com/. Read: 21.9.2026.
 
 Geeksforgeeks 2026. cin in C++. Readable: https://www.geeksforgeeks.org/cpp/cin-in-c/. Read: 20.9.2026.
 
