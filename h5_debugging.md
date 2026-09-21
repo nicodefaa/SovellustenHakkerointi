@@ -216,20 +216,43 @@ I tried to fish for variable names with `p pass`... which autofilled a variable 
 
 <img width="639" height="388" alt="kuva" src="https://github.com/user-attachments/assets/40088d8b-ab91-4586-9123-c804eed9b9d1" />
 
-I tested many different `info`-commands, but most of them gave nothing. `info functions` revealed a very long list of non-debugging symbols:
+I tested many different `info`-commands, but most of them gave nothing. `info functions` revealed a very long list of non-debugging symbols (only a small part of them visible in the image):
 
 <img width="393" height="424" alt="kuva" src="https://github.com/user-attachments/assets/4f49a17b-b62e-4e4f-93d9-01d44ce875c1" />
 
+`disassemble main`
 
+<img width="663" height="662" alt="kuva" src="https://github.com/user-attachments/assets/dfb5e9a5-c364-4118-834c-d90428cfd1e1" />
 
-
-
+To be continued..
 
 <br>
 
 ---
 
 ## 5. Lab3
+
+Starting point: executable .64-files with their source code files
+
+Goal: Choose one file and figure out the password (presumably without looking at the source code)
+
+<img width="469" height="684" alt="kuva" src="https://github.com/user-attachments/assets/f27dc77d-1158-4150-bc17-6013b4e22fab" />
+
+I decided to start trying with `crackme03.64`. First a simple test to run the program with `./crackme03.64 test123`.
+
+<img width="470" height="125" alt="kuva" src="https://github.com/user-attachments/assets/954a275f-24f2-4e8c-aac9-46b836878171" />
+
+`break main` --> `run` --> `next` resulted in the program ending with the message "Need exactly one argument."
+
+<img width="639" height="264" alt="kuva" src="https://github.com/user-attachments/assets/660ed3f4-d490-4ecc-838a-e3b3bcec950e" />¨
+
+`disassemble main`
+
+<img width="653" height="648" alt="kuva" src="https://github.com/user-attachments/assets/4200f349-ffd3-4352-bd86-fd326e2c4cc7" />
+
+
+
+
 
 <br>
 
