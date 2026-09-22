@@ -220,9 +220,36 @@ I tested many different `info`-commands, but most of them gave nothing. `info fu
 
 <img width="393" height="424" alt="kuva" src="https://github.com/user-attachments/assets/4f49a17b-b62e-4e4f-93d9-01d44ce875c1" />
 
-`disassemble main`
+Output of `disassemble main` (with assembly-flavor as `att`):
 
 <img width="663" height="662" alt="kuva" src="https://github.com/user-attachments/assets/dfb5e9a5-c364-4118-834c-d90428cfd1e1" />
+
+Output of `info registers` when running the program with breakpoint main:
+
+<img width="471" height="459" alt="kuva" src="https://github.com/user-attachments/assets/cc2047a4-3582-4b0c-a274-d35ee597687d" />
+
+Outpuf of `info registers` after doing `next` and giving user input:
+
+<img width="563" height="474" alt="kuva" src="https://github.com/user-attachments/assets/a9b0f420-4ce1-4709-ad6d-8ac11940ab58" />
+
+To get a basic understanding of the `disassemble` I tried to look up different guides for assembly syntax.
+
+At this point I also realized my disassembly-flavor was set to att by default, instead of intel which I assumed would be easier for me to understand so I changed it with `set disassembly-flavor intel`:
+
+<img width="655" height="666" alt="kuva" src="https://github.com/user-attachments/assets/b37842f7-6f65-49c6-ae0e-292606c7355a" />
+
+At this point with my limited disassembly knowledge I wasn't sure if I was heading into a useless rabbithole, but inspecting the `disassemble main` I noticed it printed names for other functions it calls, so let's disassemble those as well. Out of all those I was able to disassemble two, `mAsdf3a` and `EaseEAs`.
+
+Output of `disassemble mAsdf3a`:
+
+<img width="568" height="619" alt="kuva" src="https://github.com/user-attachments/assets/457ca5f0-5949-4038-a19a-d114fadb82df" />
+
+Output of `disassemble EaseEAs`:
+
+<img width="554" height="452" alt="kuva" src="https://github.com/user-attachments/assets/38111070-e151-42e8-8d4f-9c875a66349d" />
+
+
+
 
 To be continued..
 
@@ -264,8 +291,8 @@ To be continued..
 
 List of references:
 
-Ascii-Code.com. ASCII Table. Readable: https://www.ascii-code.com/. Read: 21.9.2026.
+Ascii-Code.com 2026. ASCII Table. Readable: https://www.ascii-code.com/. Read: 21.9.2026.
 
-Geeksforgeeks 2026. cin in C++. Readable: https://www.geeksforgeeks.org/cpp/cin-in-c/. Read: 20.9.2026.
+Geeksforgeeks 30.5.2026. cin in C++. Readable: https://www.geeksforgeeks.org/cpp/cin-in-c/. Read: 20.9.2026.
 
-Karvinen, T. & Iso-Anttila, L. 2026. Sovellusten hakkerointi - Application hacking and vulnerabilities. Readable: https://terokarvinen.com/application-hacking/. Read: 20.9.2026.
+Karvinen, T. & Iso-Anttila, L. 5.8.2026. Sovellusten hakkerointi - Application hacking and vulnerabilities. Readable: https://terokarvinen.com/application-hacking/. Read: 20.9.2026.
