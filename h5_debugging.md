@@ -250,6 +250,9 @@ Output of `disassemble EaseEAs`:
 
 
 
+<img width="651" height="333" alt="kuva" src="https://github.com/user-attachments/assets/ce27807d-0338-42ff-8ae3-71294dd7e1d1" />
+
+
 
 To be continued..
 
