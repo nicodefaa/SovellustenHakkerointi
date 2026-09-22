@@ -232,7 +232,7 @@ Outpuf of `info registers` after doing `next` and giving user input:
 
 <img width="563" height="474" alt="kuva" src="https://github.com/user-attachments/assets/a9b0f420-4ce1-4709-ad6d-8ac11940ab58" />
 
-To get a basic understanding of the `disassemble` I tried to look up different guides for assembly syntax.
+To get a basic understanding of the `disassemble` I tried to look up different guides for assembly syntax. [University of Virginia Computer Science](https://www.cs.virginia.edu/~evans/cs216/guides/x86.html) for written guide about Instructions, and [Mxy's Learn assembly for Beginners tutorials](https://www.youtube.com/playlist?list=PL9o2C-4xGfjHl5PF-Xt-yWH2zc4wjJ3AW) for beginner level understanding on how it's written and how the steps work (References: University of Virginia Computer Science 2006. Mxy 2026.)
 
 At this point I also realized my disassembly-flavor was set to att by default, instead of intel which I assumed would be easier for me to understand so I changed it with `set disassembly-flavor intel`:
 
@@ -296,3 +296,7 @@ Ascii-Code.com 2026. ASCII Table. Readable: https://www.ascii-code.com/. Read: 2
 Geeksforgeeks 30.5.2026. cin in C++. Readable: https://www.geeksforgeeks.org/cpp/cin-in-c/. Read: 20.9.2026.
 
 Karvinen, T. & Iso-Anttila, L. 5.8.2026. Sovellusten hakkerointi - Application hacking and vulnerabilities. Readable: https://terokarvinen.com/application-hacking/. Read: 20.9.2026.
+
+Mxy 2026. Learn Assembly for Beginners | x86-64 Tutorials. Video playlist. Watchable: https://www.youtube.com/playlist?list=PL9o2C-4xGfjHl5PF-Xt-yWH2zc4wjJ3AW. Watched: 22.9.2026.
+
+University of Virginia Computer Science 2006. x86 Assembly Guide. Readable: https://www.cs.virginia.edu/~evans/cs216/guides/x86.html. Read: 22.9.2026.
