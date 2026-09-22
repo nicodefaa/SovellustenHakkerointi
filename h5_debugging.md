@@ -282,10 +282,31 @@ The code then branches into two, where if the index is odd `sub    edx,0x7` with
 
 <img width="451" height="68" alt="kuva" src="https://github.com/user-attachments/assets/a9bd2a72-d5c3-4490-889c-bb5b01f1be12" />
 
-Keeping this in mind for the future, we now still need to find the hidden string. Checking back to the `disassemble main` 
+Keeping this in mind for the future, we now still need to find the hidden string. Checking back to the `disassemble main` we can see `call   0x55555555525a <mAsdf3a>` so let's check a breakpoint to that with `break mAsdf3a`.
 
+<img width="513" height="125" alt="kuva" src="https://github.com/user-attachments/assets/e2bba5aa-ce52-4383-84db-8318c161bd5e" />
 
+Now we `run` the program, do `next` once until it asks for input. We give any input (I used 321 here), and now we stop the new breakpoint mAsdf3a. 
 
+Now at this point we can use the command `x/s $rdi`. (`x` = examine memory, `/s` to interpret is as a string, and `$rdi` the address to be examined)
+
+<img width="381" height="299" alt="kuva" src="https://github.com/user-attachments/assets/4ef8fa74-c660-42fa-90ef-6bdce2c7193f" />
+
+Here we receive the hidden string that is stored in $rdi at this point of running the code: **anLTj4u8**.
+
+Now we just need to use the algorithm from before (odd = -7, even = +3). Using the ASCII table from [Ascii-code.com](https://www.ascii-code.com/), we can turn it into a new string.
+
+index 0 (even): a + 3 = d
+
+index 1 (odd): n - 7 = g
+
+index 2 (even): L + 3 = O
+
+etc... and we get **dgOMm-x1**
+
+Now we `quit` GDB and run the program `./passtr2o`. Using the decrypted string **dgOMm-x1** as the password, we get the flag **FLAG{Lari-rsvRDx04WMBZpuwg4qfYwzdcvVa0oym}**.
+
+<img width="562" height="91" alt="kuva" src="https://github.com/user-attachments/assets/cadf5ede-6711-43fb-b0c0-8b412194d89e" />
 
 
 
