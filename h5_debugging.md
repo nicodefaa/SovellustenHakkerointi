@@ -308,16 +308,6 @@ Now we `quit` GDB and run the program `./passtr2o`. Using the decrypted string *
 
 <img width="562" height="91" alt="kuva" src="https://github.com/user-attachments/assets/cadf5ede-6711-43fb-b0c0-8b412194d89e" />
 
-
-
-<img width="651" height="333" alt="kuva" src="https://github.com/user-attachments/assets/ce27807d-0338-42ff-8ae3-71294dd7e1d1" />
-
-<img width="570" height="105" alt="kuva" src="https://github.com/user-attachments/assets/8c52dec7-f26d-4f96-b29e-0a4168b621b8" />
-
-
-
-To be continued..
-
 <br>
 
 ---
@@ -340,9 +330,11 @@ I decided to start trying with `crackme03.64`. First a simple test to run the pr
 
 `disassemble main`
 
-<img width="653" height="648" alt="kuva" src="https://github.com/user-attachments/assets/4200f349-ffd3-4352-bd86-fd326e2c4cc7" />
+<img width="591" height="646" alt="kuva" src="https://github.com/user-attachments/assets/4201eddc-3a61-481e-b810-ab92d4118368" />
 
-To be continued..
+As in the previous exercise, we can see an interesting function to be called `call   0x1159 <check_pw>`, which we can also `disassemble check_pw`
+
+<img width="503" height="313" alt="kuva" src="https://github.com/user-attachments/assets/5eb7496c-a768-40cc-815d-c538ce7dba45" />
 
 
 
