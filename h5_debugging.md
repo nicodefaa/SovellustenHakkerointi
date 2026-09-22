@@ -248,9 +248,50 @@ Output of `disassemble EaseEAs`:
 
 <img width="554" height="452" alt="kuva" src="https://github.com/user-attachments/assets/38111070-e151-42e8-8d4f-9c875a66349d" />
 
+I didn't know how to proceed from this point on and finding help for a specific case like this turned out to be quite difficult so within the given time constraints I would've probably stayed stuck here. I really wanted to see the solution though so for the next time it would likely be a little easier to do myself, so I used ChatGPT's assistance to go forward with this task.
+
+Briefly what I had done so far (what actually mattered towards the solution):
+
+`gdb passtr2o` to open the executable file in GNU debugger.
+
+`break main` to set breakpoint to main-function.
+
+`set disassembly-flavor intel` to set disassembly syntax to intel.
+
+`disassemble main` to see the assembly for main-function.
+
+`disassemble mAsdf3a` which was a function being called in main's disassemble. 
+
+---
+
+Now to move forward with ChatGPT's guidance.
+
+Lines `mov rbp,rdi` and `mov rbx,rsi` were found in disassemble mAsdf3a, which mean the value of `rdi` is copied into `rbp` and value of `rsi` copied into `rbx`. 
+
+<img width="401" height="53" alt="kuva" src="https://github.com/user-attachments/assets/577aeeda-b9fa-4fc3-a47a-fce0efeb0f29" />
+
+Now we have two strings being used in `mAsdf3a`-function which are stored into `rbp` and `rbx`.
+
+`mAsdf3a` also called for another function `strlen@plt`, which I understood to be just an early check whether the strings are the same length, and return false right away if not, without having to do any further checks.
+
+`movsx  edx,BYTE PTR [rbp+rax*1+0x0]` and `movsx  ecx,BYTE PTR [rbx+rax*1]` takes one character from each string, and `test   al,0x1` checks whether the current index is odd or even. (0 = even, 1 = odd, 2 = even, etc...)
+
+<img width="557" height="58" alt="kuva" src="https://github.com/user-attachments/assets/14f7e061-0b49-4f97-963d-9d2619b89d35" />
+
+The code then branches into two, where if the index is odd `sub    edx,0x7` with substract 7 from it (from ASCII index), and if the index is even `add    edx,0x3` will add 3 to it (ASCII index).
+
+<img width="451" height="68" alt="kuva" src="https://github.com/user-attachments/assets/a9bd2a72-d5c3-4490-889c-bb5b01f1be12" />
+
+Keeping this in mind for the future, we now still need to find the hidden string. Checking back to the `disassemble main` 
+
+
+
+
 
 
 <img width="651" height="333" alt="kuva" src="https://github.com/user-attachments/assets/ce27807d-0338-42ff-8ae3-71294dd7e1d1" />
+
+<img width="570" height="105" alt="kuva" src="https://github.com/user-attachments/assets/8c52dec7-f26d-4f96-b29e-0a4168b621b8" />
 
 
 
@@ -287,8 +328,6 @@ To be continued..
 <br>
 
 ---
-
-## 6. Lab4
 
 <br>
 
