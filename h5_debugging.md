@@ -330,12 +330,55 @@ I decided to start trying with `crackme03.64`. First a simple test to run the pr
 
 `disassemble main`
 
-<img width="591" height="646" alt="kuva" src="https://github.com/user-attachments/assets/4201eddc-3a61-481e-b810-ab92d4118368" />
+<img width="591" height="649" alt="kuva" src="https://github.com/user-attachments/assets/54816d1c-479a-4762-a847-c8ba7c0fd2f1" />
 
 As in the previous exercise, we can see an interesting function to be called `call   0x1159 <check_pw>`, which we can also `disassemble check_pw`
 
-<img width="503" height="313" alt="kuva" src="https://github.com/user-attachments/assets/5eb7496c-a768-40cc-815d-c538ce7dba45" />
+<img width="556" height="304" alt="kuva" src="https://github.com/user-attachments/assets/d3b28212-2934-4454-9a33-d52451194459" />
 
+We set a breakpoint to check_pw with `break check_pw`.
+
+<img width="517" height="108" alt="kuva" src="https://github.com/user-attachments/assets/d627db19-6fcf-49c7-8cff-4bd6c769aeb4" />
+
+The crackme program worked in an interesting way where it required the input at the same time as running it, so we had to do `run 321` (321 being the chosen input)
+
+<img width="279" height="123" alt="kuva" src="https://github.com/user-attachments/assets/db65b365-5419-40fb-8192-12f3f9c54438" />
+
+On subsequent runs it seemed to memorize the last given input:
+
+<img width="290" height="124" alt="kuva" src="https://github.com/user-attachments/assets/1498ac2c-26d4-49bd-bf4e-c6b72e104b15" />
+
+From this point on I used ChatGPT again to assist and explain the assembly to me.
+
+In the `disassemble main` we can see a lines `call   0x555555555040 <strlen@plt>` and `cmp    rax,0x6` which compares length of `rax` (input) to `6`
+
+<img width="535" height="71" alt="kuva" src="https://github.com/user-attachments/assets/574f8ea7-1f5f-4777-a4e0-e1952354e1f8" />
+
+This means in order to stop the program at break check_pw, we need to input any string 6 characters long.
+
+<img width="396" height="161" alt="kuva" src="https://github.com/user-attachments/assets/59204124-a3b4-4073-9d10-634e2fbe4f86" />
+
+Now pausing at check_pw, we can check what `x/s $rdi` and `x/s $rsi` contain. $rdi returns the input string we just inserted, and $rsi returns a string **lAmBdA**
+
+<img width="399" height="113" alt="kuva" src="https://github.com/user-attachments/assets/4972edc3-158e-4dd6-8537-01b39f321bd0" />
+
+There is also a string in `x/s $rdx` called "\002\003\002\003\005"
+
+<img width="324" height="42" alt="kuva" src="https://github.com/user-attachments/assets/47f2aa81-a115-43d2-bf22-95d46797529d" />
+
+..which is used in check_pw to transform the string with the same ASCII method as in the previous exercise.
+
+<img width="560" height="295" alt="kuva" src="https://github.com/user-attachments/assets/61b8c922-820c-43f1-b30c-9cfd01eefaa8" />
+
+Checking from the ASCII table (Ascii-Code.com) we can turn the string into a new one:
+
+l + 2 = n
+
+A + 3 = D
+
+etc.. becomes **nDoEiA**, which we can use as the password for the program:
+
+<img width="475" height="61" alt="kuva" src="https://github.com/user-attachments/assets/ac7e1f6e-2a84-44a3-951a-7cd24e8c0145" />
 
 
 <br>
@@ -347,6 +390,8 @@ As in the previous exercise, we can see an interesting function to be called `ca
 List of references:
 
 Ascii-Code.com 2026. ASCII Table. Readable: https://www.ascii-code.com/. Read: 21.9.2026.
+
+ChatGPT Luna 5.6 LLM was used to assist with completing 4. Lab2 and 5. Lab3.
 
 Geeksforgeeks 30.5.2026. cin in C++. Readable: https://www.geeksforgeeks.org/cpp/cin-in-c/. Read: 20.9.2026.
 
