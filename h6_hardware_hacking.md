@@ -1,14 +1,10 @@
 # h6 Onkohan tämä turvallinen käyttää? (Hardware hacking)
 
-## Main task is to investigate and test the security of Tapo C200 -camera's app, using all and any methods learned throughout the course.
+The goal of this exercise is to investigate and test the security of Tapo C200 -camera's app, using all and any methods learned throughout the course.
 
 Specific tasks:
 
-- Download and install [tp-link-decrypt](https://github.com/robbins/tp-link-decrypt).
-
-- Download TapoV3 firmware binary. `aws s3 cp s3://download.tplinkcloud.com/firmware/Tapo_C200v3_en_1.4.2_Build_250313_Rel.40499n_up_boot-signed_1747894968535.bin Tapo_C200v4_en_1.4.2.bin --no-sign-request`
-
-- Download [camera dump-file](https://hhmoodle.haaga-helia.fi/mod/resource/view.php?id=3754945).
+- Download/install **tp-link-decrypt**, **TapoV3 firmware binary**, and **camera dump-file**.
 
 1. decrypt firmware image
 2. Analyse the image file
@@ -19,7 +15,7 @@ Specific tasks:
 
 <br>
 
-## Preparation:
+## Preparation
 
 
 Work environment used: Kali GNU/Linux version 2026.3 (Virtual Machine)
@@ -32,9 +28,16 @@ Download TapoV3 firmware binary with `aws s3 cp s3://download.tplinkcloud.com/fi
 
 <img width="1034" height="117" alt="kuva" src="https://github.com/user-attachments/assets/543f11fa-0e49-4e67-8e49-9d52c7c64958" />
 
-Now we have the **Tapo_C200v4_en_1.4.2.bin** firmware file downloaded.
+Now we have the **Tapo_C200v4_en_1.4.2.bin** firmware file downloaded as well.
 
 <img width="1030" height="182" alt="kuva" src="https://github.com/user-attachments/assets/667d1cca-25d4-479b-9f72-e0343f1ae568" />
+
+Lastly manually download the [dump file](https://hhmoodle.haaga-helia.fi/mod/resource/view.php?id=3754945) from course website on Moodle (requires login and permissions to download). After downloading, I moved the file into the same directory `mv dump-tapo-c200v3-1.4.2.bin ~/h6_TapoC200/`, and now we have all 3 downloads ready to start working on.
+
+<img width="587" height="209" alt="kuva" src="https://github.com/user-attachments/assets/05f5074b-27f8-495f-97d6-516bf6de362e" />
+
+## 1. Decrypt firmware image
+
 
 
 
