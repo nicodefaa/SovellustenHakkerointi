@@ -1,5 +1,7 @@
 # h6 Onkohan tämä turvallinen käyttää? (Hardware hacking)
 
+<br>
+
 The goal of this exercise is to investigate and test the security of Tapo C200 -camera's app, using all and any methods learned throughout the course.
 
 Specific tasks:
@@ -36,7 +38,30 @@ Lastly manually download the [dump file](https://hhmoodle.haaga-helia.fi/mod/res
 
 <img width="587" height="209" alt="kuva" src="https://github.com/user-attachments/assets/05f5074b-27f8-495f-97d6-516bf6de362e" />
 
+Reference: Haaga-Helia 2026.
+
+<br>
+
 ## 1. Decrypt firmware image
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+List of references:
+
+Haaga-Helia 5.8.2026. Sovellusten hakkerointi ja haavoittuvuudet. Hardware hacking. Readable: https://hhmoodle.haaga-helia.fi/course/view.php?id=48775&section=3. Read: 27.9.2026.
 
 
 
