@@ -146,6 +146,8 @@ Next task told us to "search available applications", which I was quite unsure w
 
 ## 6. Analyse and try to open root password
 
+The last task was to analyse and try to open root password. Initially I was completely clueless what this meant. How would we "open" the root password? Was it a file located somewhere? Where would we use this password if we found it? Nevertheless the only way to move forward was to start inspecting the directories and files we had extracted, starting from the **squashfs-root**-directories.
+
 Both extracted squashfs-root directories **_Tapo_C200v4_en_1.4.2.bin.dec.extracted/squashfs-root** and **_dump-tapo-c200v3-1.4.2.bin.extracted/squashfs-root** had identical directory hierarchy.
 
 <img width="1386" height="175" alt="kuva" src="https://github.com/user-attachments/assets/9d666157-7fca-452d-82ff-69c5fc32b8cc" />
