@@ -98,9 +98,27 @@ The firmware file was now decrypted and we could move forward onto the next step
 
 ## Analyse the image file
 
+Next to run binwalk on the decrypted file to analyse it `binwalk ./Tapo_C200v4_en_1.4.2.bin.dec`.
 
+<img width="1029" height="339" alt="kuva" src="https://github.com/user-attachments/assets/c8689824-40e3-429a-8793-124bdbcdbabe" />
 
+<img width="1025" height="80" alt="kuva" src="https://github.com/user-attachments/assets/6e2a3d1d-0c5d-4cfb-b0c8-e3ba34191361" />
 
+The result had lots of *xz compressed data* lines in between, but the key findings were the lines *0x20400* near the top and *0x3E0200* near the bottom, which confirmed Linux MIPS-based platform and SquashFS filesystem.
+
+## Extract rootfs from the dump file
+
+<br>
+
+## Extract rootfs from the image file
+
+<br>
+
+## Search available applications
+
+<br>
+
+## Analyse and try to open root password
 
 
 
