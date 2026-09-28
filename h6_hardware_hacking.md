@@ -66,12 +66,45 @@ And the last row *4456448       0x440000        Squashfs filesystem, little endi
 
 <img width="1024" height="68" alt="kuva" src="https://github.com/user-attachments/assets/74aa642e-8fd6-4443-b45b-0dc36a14c01d" />
 
+So far we've inspected the files a little, but let's now try to actually decrypt the firmware image. Reading the `cat tp-link-decrypt/README.md`, it instructed to first install dependencies with `./preinstall.sh` and then to run the `extract_keys.sh` file.
+
+<img width="1015" height="128" alt="kuva" src="https://github.com/user-attachments/assets/46ecac6c-c1ed-41d3-9ba3-c12ac4f3f48d" />
+
+`cd tp-link-decrypt` and `./extract_keys.sh` to run it:
+
+<img width="664" height="215" alt="kuva" src="https://github.com/user-attachments/assets/3d22ea0d-b2ca-403e-a890-0f3519fb71a1" />
+
+During the run, the program asked if I wanted to run binwalk in quiet mode, to which I answered *yes*:
+
+<img width="494" height="64" alt="kuva" src="https://github.com/user-attachments/assets/81df5f2e-53c3-416c-8d6d-d6a9d1a3a11a" />
+
+After working for a moment, the directory's contents changed to the following:
+
+<img width="523" height="254" alt="kuva" src="https://github.com/user-attachments/assets/f925abf6-db54-4426-85e5-7687b404738b" />
+
+Next step was to use the `make` command, after which the directory hierarchy looked as follows:
+
+<img width="1033" height="478" alt="kuva" src="https://github.com/user-attachments/assets/a698ae40-e8ad-4db8-a34f-b736f7ca1c6b" />
+
+The README instructed "Decrypt with bin/tp-link-decrypt <fw file>", so I used the command `./bin/tp-link-decrypt ~/h6_TapoC200/Tapo_C200v4_en_1.4.2.bin` next to decrypt the firmware file
+
+<img width="666" height="305" alt="kuva" src="https://github.com/user-attachments/assets/f8496760-f205-412b-bb96-50666f627fcf" />
+
+Now a file **Tapo_C200v4_en_1.4.2.bin.dec** appeared in the directory alongside the original **Tapo_C200v4_en_1.4.2.bin**
+
+<img width="595" height="125" alt="kuva" src="https://github.com/user-attachments/assets/5b958dd6-bb1f-4d39-b0cb-1ddc40d5813a" />
+
+The firmware file was now decrypted and we could move forward onto the next step.
+
+## Analyse the image file
 
 
 
 
 
 
+
+<br>
 
 <br>
 
