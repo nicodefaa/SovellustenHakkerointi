@@ -146,9 +146,24 @@ Next task told us to "search available applications", which I was quite unsure w
 
 ## 6. Analyse and try to open root password
 
-Both extracted squashfs-root directories **_Tapo_C200v4_en_1.4.2.bin.dec.extracted/squashfs-root** and **_dump-tapo-c200v3-1.4.2.bin.extracted/squashfs-root** had the same hierarchy.
+Both extracted squashfs-root directories **_Tapo_C200v4_en_1.4.2.bin.dec.extracted/squashfs-root** and **_dump-tapo-c200v3-1.4.2.bin.extracted/squashfs-root** had identical directory hierarchy.
 
 <img width="1386" height="175" alt="kuva" src="https://github.com/user-attachments/assets/9d666157-7fca-452d-82ff-69c5fc32b8cc" />
+
+I searched through both directories with the `tree -F` command, trying to look for any interesting files inside any of the sub-directories.
+
+Total results for both **_Tapo_C200v4_en_1.4.2.bin.dec.extracted/squashfs-root** and **_dump-tapo-c200v3-1.4.2.bin.extracted/squashfs-root** included 20 directories, 76 files.
+
+<img width="692" height="742" alt="kuva" src="https://github.com/user-attachments/assets/340e0e89-9382-4d3e-b9b7-eb50f756e2fb" />
+
+
+
+
+
+
+
+<img width="795" height="595" alt="kuva" src="https://github.com/user-attachments/assets/6e0e52f4-0d1a-4bb2-a7c1-a21a2f9304be" />
+
 
 
 
