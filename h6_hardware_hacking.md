@@ -112,7 +112,7 @@ Next task told us to extract rootfs from the dump file *dump-tapo-c200v3-1.4.2.b
 
 <img width="664" height="139" alt="kuva" src="https://github.com/user-attachments/assets/4035f74a-f3fe-451c-84fa-0c791bb3d5b2" />
 
-Inspecting the directory, we can find the *squashfs-root* executable file inside. There was also a long list of hexa-named files inside but I used `grep` to filter the results for the image below.
+Inspecting the directory, we can find the *squashfs-root* directory inside. There was also a long list of hexa-named files inside but I used `grep` to filter the results for the image below.
 
 <img width="526" height="77" alt="kuva" src="https://github.com/user-attachments/assets/091dcb56-8af0-4531-a19f-a188cc600ac3" />
 
@@ -127,7 +127,7 @@ Inspecting the directory, we can find the *squashfs-root* executable file inside
 
 Next task was to extract roofs from the **image file**, which I assumed to mean the *Tapo_C200v4_en_1.4.2.bin.dec* file, not the original, since we had specifically decrypted it before.
 
-`binwalk -e Tapo_C200v4_en_1.4.2.bin.dec` gave us the **_Tapo_C200v4_en_1.4.2.bin.dec.extracted** -directory, which also containted the **squashfs-root** file.
+`binwalk -e Tapo_C200v4_en_1.4.2.bin.dec` gave us the **_Tapo_C200v4_en_1.4.2.bin.dec.extracted** -directory, which also containted the **squashfs-root** directory.
 
 <img width="370" height="44" alt="kuva" src="https://github.com/user-attachments/assets/f1711d0e-900c-4363-9164-a14d41bf6dbd" />
 
@@ -136,15 +136,19 @@ Next task was to extract roofs from the **image file**, which I assumed to mean 
 <img width="526" height="79" alt="kuva" src="https://github.com/user-attachments/assets/e23ae9a1-ac53-4a57-ae1b-0d30b5cdd491" />
 
 
-
-
 <br>
 
 ## 5. Search available applications
 
+Next task told us to "search available applications", which I was quite unsure what it meant, so I skipped it for now and moved onto task 6.
+
 <br>
 
 ## 6. Analyse and try to open root password
+
+Both extracted squashfs-root directories **_Tapo_C200v4_en_1.4.2.bin.dec.extracted/squashfs-root** and **_dump-tapo-c200v3-1.4.2.bin.extracted/squashfs-root** had the same hierarchy.
+
+<img width="1386" height="175" alt="kuva" src="https://github.com/user-attachments/assets/9d666157-7fca-452d-82ff-69c5fc32b8cc" />
 
 
 
@@ -156,5 +160,5 @@ List of references:
 
 Haaga-Helia 5.8.2026. Sovellusten hakkerointi ja haavoittuvuudet. Hardware hacking. Readable: https://hhmoodle.haaga-helia.fi/course/view.php?id=48775&section=3. Read: 27.9.2026.
 
-
+Robbins 25.8.2026. robbins / tp-link-decrypt GitHub repository. Readable: https://github.com/robbins/tp-link-decrypt. Read: 28.9.2026.
 
