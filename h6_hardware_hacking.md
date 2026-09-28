@@ -96,7 +96,7 @@ Now a file **Tapo_C200v4_en_1.4.2.bin.dec** appeared in the directory alongside 
 
 The firmware file was now decrypted and we could move forward onto the next step.
 
-## Analyse the image file
+## 2. Analyse the image file
 
 Next to run binwalk on the decrypted file to analyse it `binwalk ./Tapo_C200v4_en_1.4.2.bin.dec`.
 
@@ -106,19 +106,32 @@ Next to run binwalk on the decrypted file to analyse it `binwalk ./Tapo_C200v4_e
 
 The result had lots of *xz compressed data* lines in between, but the key findings were the lines *0x20400* near the top and *0x3E0200* near the bottom, which confirmed Linux MIPS-based platform and SquashFS filesystem.
 
-## Extract rootfs from the dump file
+## 3. Extract rootfs from the dump file
+
+Next task told us to extract rootfs from the dump file *dump-tapo-c200v3-1.4.2.bin*. For this I used binwalk with the command `binwalk -e dump-tapo-c200v3-1.4.2.bin`, which gave us the directory *_dump-tapo-c200v3-1.4.2.bin.extracted*.
+
+<img width="664" height="139" alt="kuva" src="https://github.com/user-attachments/assets/4035f74a-f3fe-451c-84fa-0c791bb3d5b2" />
+
+Inspecting the directory, we can find the *squashfs-root* executable file inside. There was also a long list of hexa-named files inside but I used `grep` to filter the results for the image below.
+
+<img width="526" height="77" alt="kuva" src="https://github.com/user-attachments/assets/091dcb56-8af0-4531-a19f-a188cc600ac3" />
+
+<img width="1027" height="253" alt="kuva" src="https://github.com/user-attachments/assets/17201212-6f60-4d4e-ab6d-31e9a3f86a53" />
+
+
+
 
 <br>
 
-## Extract rootfs from the image file
+## 4. Extract rootfs from the image file
 
 <br>
 
-## Search available applications
+## 5. Search available applications
 
 <br>
 
-## Analyse and try to open root password
+## 6. Analyse and try to open root password
 
 
 
