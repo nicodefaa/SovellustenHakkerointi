@@ -116,14 +116,27 @@ Inspecting the directory, we can find the *squashfs-root* executable file inside
 
 <img width="526" height="77" alt="kuva" src="https://github.com/user-attachments/assets/091dcb56-8af0-4531-a19f-a188cc600ac3" />
 
+`file 440000.squashfs` confirmed it being a filesystem:
+
 <img width="1027" height="253" alt="kuva" src="https://github.com/user-attachments/assets/17201212-6f60-4d4e-ab6d-31e9a3f86a53" />
-
-
 
 
 <br>
 
 ## 4. Extract rootfs from the image file
+
+Next task was to extract roofs from the **image file**, which I assumed to mean the *Tapo_C200v4_en_1.4.2.bin.dec* file, not the original, since we had specifically decrypted it before.
+
+`binwalk -e Tapo_C200v4_en_1.4.2.bin.dec` gave us the **_Tapo_C200v4_en_1.4.2.bin.dec.extracted** -directory, which also containted the **squashfs-root** file.
+
+<img width="370" height="44" alt="kuva" src="https://github.com/user-attachments/assets/f1711d0e-900c-4363-9164-a14d41bf6dbd" />
+
+<img width="667" height="188" alt="kuva" src="https://github.com/user-attachments/assets/28a5e8f8-c7ca-48b4-b9ab-642e8394a08f" />
+
+<img width="526" height="79" alt="kuva" src="https://github.com/user-attachments/assets/e23ae9a1-ac53-4a57-ae1b-0d30b5cdd491" />
+
+
+
 
 <br>
 
