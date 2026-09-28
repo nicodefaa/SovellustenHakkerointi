@@ -156,11 +156,7 @@ Total results for both **_Tapo_C200v4_en_1.4.2.bin.dec.extracted/squashfs-root**
 
 <img width="692" height="742" alt="kuva" src="https://github.com/user-attachments/assets/340e0e89-9382-4d3e-b9b7-eb50f756e2fb" />
 
-
-
-
-
-
+One interesting file seemed to be the executable **bin/main**, which I decided to inspect further in Ghidra.
 
 <img width="795" height="595" alt="kuva" src="https://github.com/user-attachments/assets/6e0e52f4-0d1a-4bb2-a7c1-a21a2f9304be" />
 
