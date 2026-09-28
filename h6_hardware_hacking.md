@@ -46,6 +46,25 @@ Reference: Haaga-Helia 2026.
 
 ## 1. Decrypt firmware image
 
+Inspecting the .bin files with `file [filename]` returned *data* for both, and `strings [filename]` didn't seem to provide any interesting data for now.
+
+<img width="297" height="123" alt="kuva" src="https://github.com/user-attachments/assets/9c9d3978-b994-4433-a35f-57e4d0ca0612" />
+
+Next inspecting the files with binwalk `binwalk [filename]`. 
+
+`binwalk Tapo_C200_en_1.4.2.bin` (and binwalk3) gave empty results for the file.
+
+<img width="655" height="216" alt="kuva" src="https://github.com/user-attachments/assets/9a2ee590-fd10-4922-b807-31303a038445" />
+
+`binwalk dump-tapo-c200v3-1.4.2.bin` returned a list of information.
+
+Some of the most notable rows of info were *OS: Linux, CPU: MIPS, image type: OS Kernel Image, compression type: lzma, image name: "mips Ingenic Linux-3.10.14"*, which suggested the camera using MIPS-based platform with Linux 3.10.14 kernel.
+
+<img width="1026" height="535" alt="kuva" src="https://github.com/user-attachments/assets/38f5fa70-62f0-4d05-a022-f40a26692fd5" />
+
+And the last row *4456448       0x440000        Squashfs filesystem, little endian, version 4.0, compression:xz, size: 3032084 bytes, 96 inodes, blocksize: 65536 bytes, created: 2025-03-13 03:15:05* mentioning the Squashfs filesystem.
+
+<img width="1024" height="68" alt="kuva" src="https://github.com/user-attachments/assets/74aa642e-8fd6-4443-b45b-0dc36a14c01d" />
 
 
 
@@ -54,12 +73,7 @@ Reference: Haaga-Helia 2026.
 
 
 
-
-
-
-
-
-
+<br>
 
 List of references:
 
