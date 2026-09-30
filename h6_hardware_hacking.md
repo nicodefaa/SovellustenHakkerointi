@@ -162,6 +162,19 @@ One interesting file seemed to be the executable **bin/main**, which I decided t
 
 <img width="795" height="595" alt="kuva" src="https://github.com/user-attachments/assets/6e0e52f4-0d1a-4bb2-a7c1-a21a2f9304be" />
 
+I opened it in CodeBrowder and used default settings to analyse it. I spent some time looking through the functions but could find nothing that caught my eye.
+
+From this point I tried to ask ChatGPT for possible ideas on how to move forward. It suggested I search for a string */user_management/root*.
+
+From the menu: **Search** -> **Memory** -> Search Text: *"/user_management/root** -> Type: **String**. It found the following result:
+
+<img width="915" height="206" alt="kuva" src="https://github.com/user-attachments/assets/cbe0f8c8-fef6-4761-be01-18c10477eb2f" />
+
+Clicking it brought me to the relevant section in the Listing-window.
+
+<img width="1403" height="678" alt="kuva" src="https://github.com/user-attachments/assets/dc20ca36-7a0f-4c3d-8643-eec6ad871a0d" />
+
+
 
 
 
