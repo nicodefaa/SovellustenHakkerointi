@@ -174,8 +174,33 @@ Clicking it brought me to the relevant section in the Listing-window.
 
 <img width="1403" height="678" alt="kuva" src="https://github.com/user-attachments/assets/dc20ca36-7a0f-4c3d-8643-eec6ad871a0d" />
 
+Pasting this decompiled function to ChatGPT, it said it was not related to root-password logic. It also suggested to search for the **gen_root_passwd** string with the same method as above (Search -> Memory).
 
+<img width="916" height="216" alt="kuva" src="https://github.com/user-attachments/assets/14ffbcf9-f44c-454f-8964-2c5aceb7411f" />
 
+Clicking the result brought me to the relevant section in the Listing-window, from which I right-clicked the "gen_root_passwd" string and selected **References** -> **Show References to Address**.
+
+<img width="947" height="575" alt="kuva" src="https://github.com/user-attachments/assets/3c6b0d65-eedf-49dd-834d-591f1774dd84" />
+
+From here I clicked on the first result *004202c4* and found its Listing location and the decompiled function.
+
+<img width="567" height="394" alt="kuva" src="https://github.com/user-attachments/assets/1a59c098-9425-430f-86b5-1dbcfd501224" />
+
+Pasting the function to ChatGPT, it interpreted that it does not contain a hardcoded password but instead reads data from */user_management/root*. So the firmware possibly has its own data-storage system *ds_read* for this information.
+
+<img width="1329" height="658" alt="kuva" src="https://github.com/user-attachments/assets/3b1c103d-db5f-4fe8-9453-ba0c0cd3032a" />
+
+Next I double-clicked on **ds_read** on line 19 to bring me to its own function.
+
+<img width="467" height="40" alt="kuva" src="https://github.com/user-attachments/assets/6efc454d-8531-4bfd-b2cc-67bf4cdf6e3f" />
+
+<img width="489" height="517" alt="kuva" src="https://github.com/user-attachments/assets/845de9fe-d2ff-4ea5-973e-cb354a0ba087" />
+
+<img width="453" height="78" alt="kuva" src="https://github.com/user-attachments/assets/ebb7b26c-b834-40b4-9068-af9a9a7dfb57" />
+
+This seemed interesting and like I was getting *somewhere*, even though I had no idea if it was anywhere near the right direction.
+
+But unfortunately I was running out of time and had to stop (for now) to return the assignment...
 
 
 <br>
@@ -183,6 +208,8 @@ Clicking it brought me to the relevant section in the Listing-window.
 <br>
 
 List of references:
+
+ChatGPT-5.6 Luna LLM was used to assist with task 6.
 
 Haaga-Helia 5.8.2026. Sovellusten hakkerointi ja haavoittuvuudet. Hardware hacking. Readable: https://hhmoodle.haaga-helia.fi/course/view.php?id=48775&section=3. Read: 27.9.2026.
 
