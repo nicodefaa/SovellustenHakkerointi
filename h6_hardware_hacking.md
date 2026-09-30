@@ -194,9 +194,15 @@ Next I double-clicked on **ds_read** on line 19 to bring me to its own function.
 
 <img width="467" height="40" alt="kuva" src="https://github.com/user-attachments/assets/6efc454d-8531-4bfd-b2cc-67bf4cdf6e3f" />
 
+<br>
+
 <img width="489" height="517" alt="kuva" src="https://github.com/user-attachments/assets/845de9fe-d2ff-4ea5-973e-cb354a0ba087" />
 
+<br>
+
 <img width="453" height="78" alt="kuva" src="https://github.com/user-attachments/assets/ebb7b26c-b834-40b4-9068-af9a9a7dfb57" />
+
+<br>
 
 This seemed interesting and like I was getting *somewhere*, even though I had no idea if it was anywhere near the right direction.
 
